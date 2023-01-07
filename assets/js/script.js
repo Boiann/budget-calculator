@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateDateTime() {
         // Get the current date and time
         const currentDate = new Date();
-        const currentTime = currentDate.toLocaleTimeString();
+        const currentTime = currentDate.toLocaleTimeString('en-US', {hour12: false});
         const day = currentDate.getDate();
         // month index starts at 0, so we need to add 1 to get the correct month number
         const month = currentDate.getMonth() + 1;
