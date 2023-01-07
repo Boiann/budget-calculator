@@ -38,4 +38,37 @@ function calculateBudget() {
 }
 
 
+// Get the add expense button and add a click event listener
+const addExpenseBtn = document.getElementById('add-expense-btn');
+addExpenseBtn.addEventListener('click', addExpense);
+
+// Add a new expense item to the expense container
+function addExpense() {
+  const expenseContainer = document.getElementById('expense-container');
+  const newExpenseItem = document.createElement('div');
+  newExpenseItem.classList.add('expense-item');
+  
+  // Set the inner HTML of the new expense item
+  newExpenseItem.innerHTML = `
+    <input type="text" placeholder="Expense name">
+    <input type="number" placeholder="Expense amount">
+    <button type="button" class="remove-expense-btn">Remove</button>
+  `;
+  
+  // Add a click event listener to the remove button
+  newExpenseItem.querySelector('.remove-expense-btn').addEventListener('click', removeExpense);
+  
+  // Append the new expense item to the expense container
+  expenseContainer.appendChild(newExpenseItem);
+}
+
+
+// Remove an expense item
+function removeExpense(event) {
+    const expenseItem = event.target.parentElement;
+    expenseItem.remove();
+  }
+
+
+
   });
