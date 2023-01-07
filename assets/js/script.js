@@ -180,5 +180,27 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('#welcome-message').innerHTML = `Welcome to your budget calculator, ${name}!`;
     });
 
+    // Get the element to display the date and time
+    const dateTimeDisplay = document.getElementById('date-time-display');
+
+    // Update the date and time display
+    function updateDateTime() {
+        // Get the current date and time
+        const currentDate = new Date();
+        const currentTime = currentDate.toLocaleTimeString();
+        const day = currentDate.getDate();
+        // month index starts at 0, so we need to add 1 to get the correct month number
+        const month = currentDate.getMonth() + 1;
+        const year = currentDate.getFullYear();
+
+        // Set the text content of the date and time display element
+        dateTimeDisplay.textContent = `${day}/${month}/${year} ${currentTime}`;
+    }
+
+    // Update the date and time display every second
+    setInterval(updateDateTime, 1000);
+
+    // Update the date and time display initially
+    updateDateTime();
 
 });

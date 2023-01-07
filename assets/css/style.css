@@ -73,3 +73,8 @@ header {
 .hidden {
     display: none;
 }
+
+#date-time-display {
+    font-size: 130%;
+    color: #ff0000;
+}
