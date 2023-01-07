@@ -187,7 +187,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateDateTime() {
         // Get the current date and time
         const currentDate = new Date();
-        const currentTime = currentDate.toLocaleTimeString('en-US', {hour12: false});
+        const currentTime = currentDate.toLocaleTimeString('en-US', {
+            hour12: false
+        });
         const day = currentDate.getDate();
         // month index starts at 0, so we need to add 1 to get the correct month number
         const month = currentDate.getMonth() + 1;
@@ -202,5 +204,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update the date and time display initially
     updateDateTime();
+
+    // Add a click event listener to the print button
+    document.querySelector('#print-btn').addEventListener('click', function () {
+        // Print the current page
+        window.print();
+    });
+
 
 });
