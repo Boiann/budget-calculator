@@ -34,7 +34,7 @@
             <option value="Pound">Pound</option>
             <option value="Dollar">Dollar</option>
         </select>
-        
+
         <div>Name input form</div>
     </section>
 
@@ -44,12 +44,12 @@
             <br>
             <div id="income-container">
                 <div class="income-item">
-                  <input type="text" placeholder="Income name" required>
-                  <input type="number" placeholder="Income amount" class="income" required>
-                  <button type="button" class="remove-income-btn">Remove</button>
+                    <input type="text" placeholder="Income name" required>
+                    <input type="number" placeholder="Income amount" class="income" required>
+                    <button type="button" class="remove-income-btn">Remove</button>
                 </div>
             </div>
-            <button type="button" id="add-income-btn">Add Income</button>  
+            <button type="button" id="add-income-btn">Add Income</button>
             <br>
 
             Expenses:
@@ -74,6 +74,13 @@
 
     </form>
 
+    <div id="modal-overlay" class="hidden">
+        <div id="modal">
+            <div id="modal-message"></div>
+            <button id="modal-close-btn">Close</button>
+        </div>
+    </div>
+    
     <footer>
         <div class="github">github-icon</div>
         <div class="copyright">copyright</div>

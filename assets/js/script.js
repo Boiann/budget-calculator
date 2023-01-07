@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const calculateBudgetBtn = document.getElementById('calculate-budget-btn');
     calculateBudgetBtn.addEventListener('click', calculateBudget);
 
+    //Modal testing
+    document.querySelector('#modal-close-btn').addEventListener('click', function () {
+        document.querySelector('#modal-overlay').classList.add('hidden');
+    });
+
     // Calculate the budget and display it on the page
     function calculateBudget() {
         // Make the income input mandatory
@@ -33,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < incomeInputs.length; i++) {
             // Make the expense input mandatory
             if (incomeInputs[i].value <= 0) {
-                alert('Please enter a valid amount for all income, do not use negative numbers');
+                document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all expenses using positive numbers';
+                document.querySelector('#modal-overlay').classList.remove('hidden');
                 return;
             }
             totalIncomes += parseInt(incomeInputs[i].value);
