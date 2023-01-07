@@ -128,9 +128,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Reset the form, set the currency back to default (Euro)
     function resetForm() {
-        document.getElementById('income').value = '';
+        document.querySelector('#total-income').textContent = '';
         document.getElementById('currency').value = 'Euro';
         document.querySelector('#total-expenses').textContent = '';
+        // Clear inputs of all income
+        const incomeInputs = document.querySelectorAll('.income-item input[type="text"], .income-item input[type="number"]');
+        for (let i = 0; i < incomeInputs.length; i++) {
+            incomeInputs[i].value = '';
+        }
         // Clear inputs of all expenses
         const expenseInputs = document.querySelectorAll('.expense-item input[type="text"], .expense-item input[type="number"]');
         for (let i = 0; i < expenseInputs.length; i++) {
@@ -141,9 +146,15 @@ document.addEventListener('DOMContentLoaded', function () {
         while (expenseContainer.firstChild) {
             expenseContainer.removeChild(expenseContainer.firstChild);
         }
-        //Clear the budget and add new and empty expense item
+        // Remove added income containers
+        const incomeContainer = document.getElementById('income-container');
+        while (incomeContainer.firstChild) {
+            incomeContainer.removeChild(incomeContainer.firstChild);    
+        }
+        //Clear the budget and add new and empty expense/income item
         document.getElementById('budget').innerHTML = '';
         addExpense();
+        addIncome();
     }
 
     // Prevent the user to accidentally input the letter 'e' as the income/expense value
