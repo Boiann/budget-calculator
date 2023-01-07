@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < incomeInputs.length; i++) {
             // Make the expense input mandatory
             if (incomeInputs[i].value <= 0) {
-                document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all expenses using positive numbers';
+                document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all income using positive numbers';
                 document.querySelector('#modal-overlay').classList.remove('hidden');
                 return;
             }
@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < expenseInputs.length; i++) {
             // Make the expense input mandatory
             if (expenseInputs[i].value <= 0) {
-                alert('Please enter a valid amount for all expenses, do not use negative numbers');
+                document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all expenses using positive numbers';
+                document.querySelector('#modal-overlay').classList.remove('hidden');
                 return;
             }
             totalExpenses += parseInt(expenseInputs[i].value);
@@ -160,13 +161,19 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
         }
     });
-
-
     document.getElementById('expense-container').addEventListener('keydown', function (event) {
         if (event.target.classList.contains('expense') && event.key === 'e') {
             event.preventDefault();
         }
     });
-
+    
+    // Add a submit event listener to the name form
+    document.querySelector('#name-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Get the name value and show a welcome message in the modal
+        const name = document.querySelector('#name').value;
+        document.querySelector('#modal-message').textContent = `Welcome, ${name}!`;
+        document.querySelector('#modal-overlay').classList.remove('hidden');
+    });
 
 });
