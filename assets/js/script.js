@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
         newExpenseItem.classList.add('expense-item');
         // Set the inner HTML of the new expense item
         newExpenseItem.innerHTML = `
-    <input type="text" placeholder="Expense name">
-    <input type="number" placeholder="Expense amount">
-    <button type="button" class="remove-expense-btn">Remove</button>`;
+          <input type="text" placeholder="Expense name">
+          <input type="number" placeholder="Expense amount">
+          <button type="button" class="remove-expense-btn">Remove</button>`;
         // Add a click event listener to the remove button
         newExpenseItem.querySelector('.remove-expense-btn').addEventListener('click', removeExpense);
         // Append the new expense item to the expense container
@@ -80,11 +80,37 @@ document.addEventListener('DOMContentLoaded', function () {
         const expenseItem = event.target.parentElement;
         expenseItem.remove();
     }
+
+    // Get the add income button and add a click event listener
+    const addIncomeBtn = document.getElementById('add-income-btn');
+    addIncomeBtn.addEventListener('click', addIncome);
+    // Add a new income item to the income container
+    function addIncome() {
+        const incomeContainer = document.getElementById('income-container');
+        const newIncomeItem = document.createElement('div');
+        newIncomeItem.classList.add('income-item');
+        // Set the inner HTML of the new income item
+        newIncomeItem.innerHTML = `
+          <input type="text" placeholder="Income name" required>
+          <input type="number" placeholder="Income amount" class="income" required>
+          <button type="button" class="remove-income-btn">Remove</button>
+        `;
+        // Add a click event listener to the remove button
+        newIncomeItem.querySelector('.remove-income-btn').addEventListener('click', removeIncome);
+        // Append the new income item to the income container
+        incomeContainer.appendChild(newIncomeItem);
+    }
     
+    // Remove an income item
+    function removeIncome(event) {
+        const incomeItem = event.target.parentElement;
+        incomeItem.remove();
+    }
+
     // Add a click event listener to the reset form button
     const resetFormBtn = document.getElementById('reset-form-btn');
     resetFormBtn.addEventListener('click', resetForm);
-    
+
     // Reset the form, set the currency back to default (Euro)
     function resetForm() {
         document.getElementById('income').value = '';
@@ -104,19 +130,19 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('budget').innerHTML = '';
         addExpense();
     }
-    
+
     // Prevent the user to accidentally input the letter 'e' as the income/expense value
-    document.getElementById('income').addEventListener('keydown', function(event) {
+    document.getElementById('income').addEventListener('keydown', function (event) {
         if (event.key === 'e') {
-          event.preventDefault();
+            event.preventDefault();
         }
-      });
-      
-      document.getElementById('expense').addEventListener('keydown', function(event) {
+    });
+
+    document.getElementById('expense').addEventListener('keydown', function (event) {
         if (event.key === 'e') {
-          event.preventDefault();
+            event.preventDefault();
         }
-      });
+    });
 
 
 });
