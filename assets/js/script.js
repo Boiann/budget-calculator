@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let totalIncomes = 0;
         for (let i = 0; i < incomeInputs.length; i++) {
             // Make the expense input mandatory
-            if (!incomeInputs[i].value) {
-                alert('Please enter a valid amount for all income');
+            if (incomeInputs[i].value <=0) {
+                alert('Please enter a valid amount for all income, do not use negative numbers');
                 return;
             }
             totalIncomes += parseInt(incomeInputs[i].value);
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let totalExpenses = 0;
         for (let i = 0; i < expenseInputs.length; i++) {
             // Make the expense input mandatory
-            if (!expenseInputs[i].value) {
-                alert('Please enter a valid amount for all expenses');
+            if (expenseInputs[i].value <=0) {
+                alert('Please enter a valid amount for all expenses, do not use negative numbers');
                 return;
             }
             totalExpenses += parseInt(expenseInputs[i].value);
