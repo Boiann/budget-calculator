@@ -29,12 +29,14 @@ calculateBudgetBtn.addEventListener('click', calculateBudget);
 function calculateBudget() {
   const income = document.getElementById('income').value;
   const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
+  const currency = document.getElementById('currency').value;
+  
   let totalExpenses = 0;
   for (let i = 0; i < expenseInputs.length; i++) {
     totalExpenses += parseInt(expenseInputs[i].value);
   }
   const budget = income - totalExpenses;
-  document.getElementById('budget').innerHTML = `Budget: ${budget}`;
+  document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
 }
 
 
