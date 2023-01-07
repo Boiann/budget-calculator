@@ -2,3 +2,29 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.expense-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.expense-item .remove-expense-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#budget {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#reset-form-btn {
+    background-color: #be3f3f;
+    margin-top: 20px;
+}
