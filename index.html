@@ -40,11 +40,20 @@
 
     <form id="budget-calculator-form">
         <form>
-            Income: <input type="number" id="income">
+            Income:
             <br>
-            Expenses:
+            <div id="income-container">
+                <div class="income-item">
+                  <input type="text" placeholder="Income name" required>
+                  <input type="number" placeholder="Income amount" id="income" required>
+                  <button type="button" class="remove-income-btn">Remove</button>
+                </div>
+            </div>
+            <button type="button" id="add-income-btn">Add Income</button>  
             <br>
 
+            Expenses:
+            <br>
             <div id="expense-container">
                 <div class="expense-item">
                     <input type="text" placeholder="Expense name">
@@ -52,8 +61,8 @@
                     <button type="button" class="remove-expense-btn">Remove</button>
                 </div>
             </div>
-
             <button type="button" id="add-expense-btn">Add expense</button>
+            <br>
         </form>
         
         <div id="total-expenses"></div>

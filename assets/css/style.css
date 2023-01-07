@@ -8,7 +8,22 @@ header {
     margin-bottom: 10px;
 }
 
+.income-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
 .expense-item .remove-expense-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.income-item .remove-income-btn {
     margin-left: 10px;
     padding: 5px 10px;
     font-size: 14px;
