@@ -102,6 +102,19 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('budget').innerHTML = '';
         addExpense();
     }
+    
+    // Prevent the user to accidentally input the letter 'e' as the income/expense value
+    document.getElementById('income').addEventListener('keydown', function(event) {
+        if (event.key === 'e') {
+          event.preventDefault();
+        }
+      });
+      
+      document.getElementById('expense').addEventListener('keydown', function(event) {
+        if (event.key === 'e') {
+          event.preventDefault();
+        }
+      });
 
 
 });
