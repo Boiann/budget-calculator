@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Set the inner HTML of the new expense item
         newExpenseItem.innerHTML = `
           <input type="text" placeholder="Expense name">
-          <input type="number" placeholder="Expense amount">
+          <input type="number" placeholder="Expense amount" class="expense">
           <button type="button" class="remove-expense-btn">Remove</button>`;
         // Add a click event listener to the remove button
         newExpenseItem.querySelector('.remove-expense-btn').addEventListener('click', removeExpense);
@@ -145,17 +145,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Prevent the user to accidentally input the letter 'e' as the income/expense value
-    document.getElementById('income').addEventListener('keydown', function (event) {
-        if (event.key === 'e') {
-            event.preventDefault();
+    document.getElementById('income-container').addEventListener('keydown', function(event) {
+        if (event.target.classList.contains('income') && event.key === 'e') {
+          event.preventDefault();
         }
-    });
-
-    document.getElementById('expense').addEventListener('keydown', function (event) {
-        if (event.key === 'e') {
-            event.preventDefault();
+      });
+      
+      
+      document.getElementById('expense-container').addEventListener('keydown', function(event) {
+        if (event.target.classList.contains('expense') && event.key === 'e') {
+          event.preventDefault();
         }
-    });
+      });
 
 
 });
