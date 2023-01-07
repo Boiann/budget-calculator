@@ -27,13 +27,27 @@ calculateBudgetBtn.addEventListener('click', calculateBudget);
 
 // Calculate the budget and display it on the page
 function calculateBudget() {
+  // Make the income input mandatory
   const income = document.getElementById('income').value;
+  if (!income) {
+    alert('Please enter your income');
+    return;
+  }
   const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
   const currency = document.getElementById('currency').value;
-  
   let totalExpenses = 0;
   for (let i = 0; i < expenseInputs.length; i++) {
+    // Make the expense input mandatory
+    if (!expenseInputs[i].value) {
+        alert('Please enter a valid amount for all expenses');
+        return;
+      }
     totalExpenses += parseInt(expenseInputs[i].value);
+  }
+  // Make at least one expense mandatory
+  if (expenseInputs.length === 0) {
+    alert('Please enter at least one expense');
+    return;
   }
   const budget = income - totalExpenses;
   document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
@@ -49,21 +63,17 @@ function addExpense() {
   const expenseContainer = document.getElementById('expense-container');
   const newExpenseItem = document.createElement('div');
   newExpenseItem.classList.add('expense-item');
-  
   // Set the inner HTML of the new expense item
   newExpenseItem.innerHTML = `
     <input type="text" placeholder="Expense name">
     <input type="number" placeholder="Expense amount">
     <button type="button" class="remove-expense-btn">Remove</button>
   `;
-  
   // Add a click event listener to the remove button
   newExpenseItem.querySelector('.remove-expense-btn').addEventListener('click', removeExpense);
-  
   // Append the new expense item to the expense container
   expenseContainer.appendChild(newExpenseItem);
 }
-
 
 // Remove an expense item
 function removeExpense(event) {
