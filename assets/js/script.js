@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let totalIncomes = 0;
         for (let i = 0; i < incomeInputs.length; i++) {
             // Make the expense input mandatory
-            if (incomeInputs[i].value <=0) {
+            if (incomeInputs[i].value <= 0) {
                 alert('Please enter a valid amount for all income, do not use negative numbers');
                 return;
             }
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let totalExpenses = 0;
         for (let i = 0; i < expenseInputs.length; i++) {
             // Make the expense input mandatory
-            if (expenseInputs[i].value <=0) {
+            if (expenseInputs[i].value <= 0) {
                 alert('Please enter a valid amount for all expenses, do not use negative numbers');
                 return;
             }
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the add income button and add a click event listener
     const addIncomeBtn = document.getElementById('add-income-btn');
     addIncomeBtn.addEventListener('click', addIncome);
-    
+
     // Add a new income item to the income container
     function addIncome() {
         const incomeContainer = document.getElementById('income-container');
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Append the new income item to the income container
         incomeContainer.appendChild(newIncomeItem);
     }
-    
+
     // Remove an income item
     function removeIncome(event) {
         const incomeItem = event.target.parentElement;
@@ -128,35 +128,39 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < expenseInputs.length; i++) {
             expenseInputs[i].value = '';
         }
-        // Remove added expense containers
-        const expenseContainer = document.getElementById('expense-container');
-        while (expenseContainer.firstChild) {
-            expenseContainer.removeChild(expenseContainer.firstChild);
-        }
-        // Remove added income containers
-        const incomeContainer = document.getElementById('income-container');
-        while (incomeContainer.firstChild) {
-            incomeContainer.removeChild(incomeContainer.firstChild);    
-        }
+        // Remove all income fields except the first one
+        const incomeFields = document.querySelectorAll('.income-item');
+
+        incomeFields.forEach(function (field, index) {
+            if (index !== 0) {
+                field.remove();
+            }
+        });
+
+        // Remove all expense fields except the first one
+        const expenseFields = document.querySelectorAll('.expense-item');
+        expenseFields.forEach(function (field, index) {
+            if (index !== 0) {
+                field.remove();
+            }
+        });
         //Clear the budget and add new and empty expense/income item
         document.getElementById('budget').innerHTML = '';
-        addExpense();
-        addIncome();
     }
 
     // Prevent the user to accidentally input the letter 'e' as the income/expense value
-    document.getElementById('income-container').addEventListener('keydown', function(event) {
+    document.getElementById('income-container').addEventListener('keydown', function (event) {
         if (event.target.classList.contains('income') && event.key === 'e') {
-          event.preventDefault();
+            event.preventDefault();
         }
-      });
-      
-      
-      document.getElementById('expense-container').addEventListener('keydown', function(event) {
+    });
+
+
+    document.getElementById('expense-container').addEventListener('keydown', function (event) {
         if (event.target.classList.contains('expense') && event.key === 'e') {
-          event.preventDefault();
+            event.preventDefault();
         }
-      });
+    });
 
 
 });
