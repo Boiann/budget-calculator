@@ -125,6 +125,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('#total-income').textContent = '';
         document.getElementById('currency').value = 'Euro';
         document.querySelector('#total-expenses').textContent = '';
+        document.querySelector('#welcome-message').innerHTML = '';
+        document.getElementById('name').value = '';
         // Clear inputs of all income
         const incomeInputs = document.querySelectorAll('.income-item input[type="text"], .income-item input[type="number"]');
         for (let i = 0; i < incomeInputs.length; i++) {
@@ -166,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
         }
     });
-    
+
     // Add a submit event listener to the name form
     document.querySelector('#name-form').addEventListener('submit', function (event) {
         event.preventDefault();
@@ -174,6 +176,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const name = document.querySelector('#name').value;
         document.querySelector('#modal-message').textContent = `Welcome, ${name}!`;
         document.querySelector('#modal-overlay').classList.remove('hidden');
+        // Insert the name into the welcome message
+        document.querySelector('#welcome-message').innerHTML = `Welcome to your budget calculator, ${name}!`;
     });
+
 
 });
