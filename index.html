@@ -31,14 +31,28 @@
     </section>
 
     <form id="budget-calculator-form">
-        <div id="income">
+        <form>
+            Income: <input type="number" id="income">
+            <br>
+            Expenses: 
+            <br>
 
-        </div>
-        <div id="expense">
+            <div id="expense-container">
+              <div class="expense-item">
+                <input type="text" placeholder="Expense name">
+                <input type="number" placeholder="Expense amount">
+                <button type="button" class="remove-expense-btn">Remove</button>
+              </div>
+            </div>
 
-        </div>
+            <button type="button" id="add-expense-btn">Add expense</button>
+          </form> 
+          
+          <p id="budget"></p>
         <button type="button" id="calculate-budget-btn">Calculate Budget</button>
+        <br>
         <button type="reset" id="reset-form-btn">Reset Form</button>
+
     </form>
 
     <footer>
