@@ -28,13 +28,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // Calculate the budget and display it on the page
     function calculateBudget() {
         // Make the income input mandatory
-        const income = document.getElementById('income').value;
-        if (!income) {
-            alert('Please enter your income');
+        const incomeInputs = document.querySelectorAll('.income-item input[type="number"]');
+        let totalIncomes = 0;
+        for (let i = 0; i < incomeInputs.length; i++) {
+            // Make the expense input mandatory
+            if (!incomeInputs[i].value) {
+                alert('Please enter a valid amount for all income');
+                return;
+            }
+            totalIncomes += parseInt(incomeInputs[i].value);
+        }
+        // Make at least one income mandatory
+        if (incomeInputs.length === 0) {
+            alert('Please enter at least one income');
             return;
         }
-        const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
+
         const currency = document.getElementById('currency').value;
+
+        const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
         let totalExpenses = 0;
         for (let i = 0; i < expenseInputs.length; i++) {
             // Make the expense input mandatory
@@ -49,9 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Please enter at least one expense');
             return;
         }
-        const budget = income - totalExpenses;
+
+        const budget = totalIncomes - totalExpenses;
         document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
         document.getElementById('total-expenses').innerHTML = `Total expenses: ${totalExpenses} ${currency}s`;
+        document.getElementById('total-income').innerHTML = `Total income: ${totalIncomes} ${currency}s`;
     }
 
 
@@ -84,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the add income button and add a click event listener
     const addIncomeBtn = document.getElementById('add-income-btn');
     addIncomeBtn.addEventListener('click', addIncome);
+    
     // Add a new income item to the income container
     function addIncome() {
         const incomeContainer = document.getElementById('income-container');
