@@ -20,5 +20,22 @@ Extra bits, add if possible:
 
 // Wait for the DOM to load before running Javascript
 document.addEventListener('DOMContentLoaded', function() {
-    
+
+// Get the calculate budget button and add a click event listener
+const calculateBudgetBtn = document.getElementById('calculate-budget-btn');
+calculateBudgetBtn.addEventListener('click', calculateBudget);
+
+// Calculate the budget and display it on the page
+function calculateBudget() {
+  const income = document.getElementById('income').value;
+  const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
+  let totalExpenses = 0;
+  for (let i = 0; i < expenseInputs.length; i++) {
+    totalExpenses += parseInt(expenseInputs[i].value);
+  }
+  const budget = income - totalExpenses;
+  document.getElementById('budget').innerHTML = `Budget: ${budget}`;
+}
+
+
   });
