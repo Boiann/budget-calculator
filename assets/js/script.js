@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         const budget = income - totalExpenses;
         document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
+        document.getElementById('total-expenses').innerHTML = `Total expenses: ${totalExpenses} ${currency}s`;
     }
 
 
@@ -88,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function resetForm() {
         document.getElementById('income').value = '';
         document.getElementById('currency').value = 'Euro';
+        document.querySelector('#total-expenses').textContent = '';
         // Clear inputs of all expenses
         const expenseInputs = document.querySelectorAll('.expense-item input[type="text"], .expense-item input[type="number"]');
         for (let i = 0; i < expenseInputs.length; i++) {
