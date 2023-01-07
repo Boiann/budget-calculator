@@ -42,6 +42,7 @@ header {
 #reset-form-btn {
     background-color: #be3f3f;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 #modal-overlay {
@@ -68,6 +69,7 @@ header {
 
 #modal-close-btn {
     margin-top: 8px;
+    cursor: pointer;
 }
 
 .hidden {
@@ -77,4 +79,13 @@ header {
 #date-time-display {
     font-size: 130%;
     color: #ff0000;
+}
+
+header p:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }

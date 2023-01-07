@@ -211,5 +211,21 @@ document.addEventListener('DOMContentLoaded', function () {
         window.print();
     });
 
+    // Add a submit event listener to the name form
+    document.querySelector('#about').addEventListener('click', function (event) {
+        event.preventDefault();
+        // Get the name value and show a welcome message in the modal
+        document.querySelector('#modal-message').textContent =
+        `Welcome to your personal budget calculator!
+        You can use it to add multiple incomes and expenses and get
+        the final calculation on your leftover budget.
+        If you enter your name you can make it personalized, 
+        showing who was the user of the calculator.
+        When you are done, there is a handy print button with the current
+        date and time so you can print the results for future reference
+        or accounting/bookkeeping.`;
+        document.querySelector('#modal-overlay').classList.remove('hidden');
+    });
+
 
 });
