@@ -25,13 +25,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const calculateBudgetBtn = document.getElementById('calculate-budget-btn');
     calculateBudgetBtn.addEventListener('click', calculateBudget);
 
-    //Modal testing
+    //Hide modal overlay when the user clicks 'close' button
     document.querySelector('#modal-close-btn').addEventListener('click', function () {
         document.querySelector('#modal-overlay').classList.add('hidden');
     });
 
     // Calculate the budget and display it on the page
     function calculateBudget() {
+        // Get the name value
+        const name = document.querySelector('#name').value;
+        if (name === '') {
+            // Show modal warning if the name input is empty
+            document.querySelector('#modal-message').textContent = `Please enter your name!`;
+            document.querySelector('#modal-overlay').classList.remove('hidden');
+        } else {
         // Make the income input mandatory
         const incomeInputs = document.querySelectorAll('.income-item input[type="number"]');
         let totalIncomes = 0;
@@ -60,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
         document.getElementById('total-expenses').innerHTML = `Total expenses: ${totalExpenses} ${currency}s`;
         document.getElementById('total-income').innerHTML = `Total income: ${totalIncomes} ${currency}s`;
-    }
+    }}
 
 
     // Get the add expense button and add a click event listener
@@ -125,8 +132,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('#total-income').textContent = '';
         document.getElementById('currency').value = 'Euro';
         document.querySelector('#total-expenses').textContent = '';
-        document.querySelector('#welcome-message').innerHTML = '';
         document.getElementById('name').value = '';
+        document.querySelector('h1').textContent = 'Budget Calculator';
         // Clear inputs of all income
         const incomeInputs = document.querySelectorAll('.income-item input[type="text"], .income-item input[type="number"]');
         for (let i = 0; i < incomeInputs.length; i++) {
@@ -176,8 +183,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const name = document.querySelector('#name').value;
         document.querySelector('#modal-message').textContent = `Welcome, ${name}!`;
         document.querySelector('#modal-overlay').classList.remove('hidden');
-        // Insert the name into the welcome message
-        document.querySelector('#welcome-message').innerHTML = `Welcome to your budget calculator, ${name}!`;
+        // Insert the name into the title of the page
+        document.querySelector('h1').textContent = `${name}'s Budget Calculator`;
     });
 
     // Get the element to display the date and time
@@ -216,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         // Get the name value and show a welcome message in the modal
         document.querySelector('#modal-message').textContent =
-        `Welcome to your personal budget calculator!
+            `Welcome to your personal budget calculator!
         You can use it to add multiple incomes and expenses and get
         the final calculation on your leftover budget.
         If you enter your name you can make it personalized, 
