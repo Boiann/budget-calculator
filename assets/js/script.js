@@ -38,14 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             totalIncomes += parseInt(incomeInputs[i].value);
         }
-        // Make at least one income mandatory
-        if (incomeInputs.length === 0) {
-            alert('Please enter at least one income');
-            return;
-        }
-
-        const currency = document.getElementById('currency').value;
-
         const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
         let totalExpenses = 0;
         for (let i = 0; i < expenseInputs.length; i++) {
@@ -56,12 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             totalExpenses += parseInt(expenseInputs[i].value);
         }
-        // Make at least one expense mandatory
-        if (expenseInputs.length === 0) {
-            alert('Please enter at least one expense');
-            return;
-        }
-
+        const currency = document.getElementById('currency').value;
         const budget = totalIncomes - totalExpenses;
         document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
         document.getElementById('total-expenses').innerHTML = `Total expenses: ${totalExpenses} ${currency}s`;
