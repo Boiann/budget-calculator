@@ -18,68 +18,72 @@
 <body>
 
     <header>
-        <img src="assets/images/budget_favicon_&_logo.png" alt="logo" width="80" height="80">
-        <h1>Budget calculator</h1>
+        <img src="assets/images/budget_favicon_&_logo.png" alt="logo" width="50" height="50">
+        <h1>Budget Calculator</h1>
         <nav>
             <p title="Learn more about the budget calculator" id="about">About</p>
         </nav>
     </header>
 
+    <section class="calculation">
 
-    <section class="currncy&name">
-
-        <label for="currency">Currency:</label>
-        <select id="currency">
-            <option value="Euro">Euro</option>
-            <option value="Pound">Pound</option>
-            <option value="Dollar">Dollar</option>
-        </select>
-
-        <form id="name-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" required>
-            <button type="submit" id="submit-name-btn">Submit</button>
-        </form>
-        
-    </section>
-
-    <form id="budget-calculator-form">
-        <form>
-            Income:
-            <br>
-            <div id="income-container">
-                <div class="income-item">
-                    <input type="text" placeholder="Income name" required>
-                    <input type="number" placeholder="Income amount" class="income" required>
-                    <button type="button" class="remove-income-btn">Remove</button>
-                </div>
+        <section class="currnecy-name">
+            <div id="currency-box">
+            <label for="currency">Currency:</label>
+            <select id="currency">
+                <option value="Euro">Euro</option>
+                <option value="Pound">Pound</option>
+                <option value="Dollar">Dollar</option>
+            </select>
             </div>
-            <button type="button" id="add-income-btn">Add Income</button>
-            <br>
 
-            Expenses:
-            <br>
-            <div id="expense-container">
-                <div class="expense-item">
-                    <input type="text" placeholder="Expense name">
-                    <input type="number" placeholder="Expense amount" class="expense">
-                    <button type="button" class="remove-expense-btn">Remove</button>
+            <form id="name-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                <button type="submit" id="submit-name-btn">Submit</button>
+            </form>
+        </section>
+
+        <form id="budget-calculator-form">
+            <form>
+                Income:
+                <br>
+                <div id="income-container">
+                    <div class="income-item">
+                        <input type="text" placeholder="Income name" required>
+                        <input type="number" placeholder="Income amount" class="income" required>
+                        <button type="button" class="remove-income-btn">Remove</button>
+                    </div>
                 </div>
-            </div>
-            <button type="button" id="add-expense-btn">Add expense</button>
+                <button type="button" id="add-income-btn">Add Income</button>
+                <br>
+
+                Expenses:
+                <br>
+                <div id="expense-container">
+                    <div class="expense-item">
+                        <input type="text" placeholder="Expense name">
+                        <input type="number" placeholder="Expense amount" class="expense">
+                        <button type="button" class="remove-expense-btn">Remove</button>
+                    </div>
+                </div>
+                <button type="button" id="add-expense-btn">Add expense</button>
+                <br>
+            </form>
+
+            <div id="total-income"></div>
+            <div id="total-expenses"></div>
+            <p id="budget"></p>
+            <button type="button" id="calculate-budget-btn">Calculate Budget</button>
             <br>
+            <button type="reset" id="reset-form-btn">Reset Form</button>
         </form>
 
-        <div id="total-income"></div>
-        <div id="total-expenses"></div>
-        <p id="budget"></p>
-        <button type="button" id="calculate-budget-btn">Calculate Budget</button>
         <br>
-        <button type="reset" id="reset-form-btn">Reset Form</button>
+        <button type="button" id="print-btn">Print</button>
 
-    </form>
-
-    <div id="date-time-display"></div>
+        <div id="date-time-display"></div>
+    </section>
 
     <div id="modal-overlay" class="hidden">
         <div id="modal">
@@ -87,9 +91,6 @@
             <button id="modal-close-btn">Close</button>
         </div>
     </div>
-
-    <br>
-    <button type="button" id="print-btn">Print</button>
 
     <footer>
         <div class="github">github-icon</div>

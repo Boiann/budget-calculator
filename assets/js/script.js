@@ -226,11 +226,10 @@ document.addEventListener('DOMContentLoaded', function () {
             `Welcome to your personal budget calculator!
         You can use it to add multiple incomes and expenses and get
         the final calculation on your leftover budget.
-        If you enter your name you can make it personalized, 
-        showing who was the user of the calculator.
+        When you enter your name the calculator becomes personalized 
+        and it is easy to make a reference to the person that used it.
         When you are done, there is a handy print button with the current
-        date and time so you can print the results for future reference
-        or accounting/bookkeeping.`;
+        date and time so you can print the results for accounting/bookkeeping.`;
         document.querySelector('#modal-overlay').classList.remove('hidden');
     });
 
