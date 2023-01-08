@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: space-evenly;
@@ -96,8 +100,9 @@ button {
 }
 
 body {
-    margin: 5% 20%;
+    margin: 5% 20% 10%;
     font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top right, rgba(47, 166, 245, 0.3), rgba(234,44,255,0.3));
 }
 
 .currnecy-name {
@@ -110,6 +115,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(to bottom left, rgba(47, 166, 245, 0.2), rgba(234,44,255,0.2));
+    border-radius: 15px;
 }
 
 #budget-calculator-form {
@@ -121,4 +128,20 @@ body {
 footer {
     display: flex;
     justify-content: space-evenly;
+}
+
+#currency-box {
+    padding: 20px 0;
+}
+
+#name-form {
+    padding-bottom: 20px;
+}
+
+.income-expense-text {
+    padding: 20px;
+}
+
+h2 {
+  margin: 0 auto;
 }
