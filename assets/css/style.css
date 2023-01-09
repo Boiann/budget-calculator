@@ -214,3 +214,11 @@ select  {
     transform: scale(1.1);
     transition: all 0.4s;
 }
+
+#modal-close-btn {
+    background-color: #cf5454;;
+}
+
+#modal-close-btn:hover {
+    background-color: #ce3434
+}

@@ -218,20 +218,25 @@ document.addEventListener('DOMContentLoaded', function () {
         window.print();
     });
 
-    // Add a submit event listener to the name form
-    document.querySelector('#about').addEventListener('click', function (event) {
-        event.preventDefault();
-        // Get the name value and show a welcome message in the modal
-        document.querySelector('#modal-message').textContent =
-            `Welcome to your personal budget calculator!
-        You can use it to add multiple incomes and expenses and get
-        the final calculation on your leftover budget.
-        When you enter your name the calculator becomes personalized 
-        and it is easy to make a reference to the person that used it.
-        When you are done, there is a handy print button with the current
-        date and time so you can print the results for accounting/bookkeeping.`;
-        document.querySelector('#modal-overlay').classList.remove('hidden');
-    });
+    // Add a submit event listener to the about text
+document.querySelector('#about').addEventListener('click', function (event) {
+    event.preventDefault();
+    // Show the message in the opened modal
+    document.querySelector('#modal-message').innerHTML = 
+        `<h3>Welcome to your personal budget calculator!</h3>
+        <h4>Made with passion and out of necessity to clearly see how the income and expenses affect the final budget.</h4>
+        <ul>
+            <li>You can use it to add multiple incomes and expenses and get the final calculation on your leftover budget.</li>
+            <li>The income/expense names are not required if you need a quick calculation.</li>
+            <li>The income/expense values are mandatory however, the calculator will not work unless at least one input is entered,
+            and it has to be a positive number value.</li>
+            <li>When you enter your name the calculator becomes personalized and it is easy to make a reference to the person that used it, it is also required.</li>
+            <li>When you are done, there is a handy print button with the current date and time so you can print the results for accounting/bookkeeping.</li>
+        </ul>
+        <h4>Enjoy using the calculator, hope there is a lot left over in the budget when you're done!</h4>`;
+    document.querySelector('#modal-overlay').classList.remove('hidden');
+});
+
 
 
 });
