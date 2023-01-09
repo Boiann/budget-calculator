@@ -23,7 +23,6 @@ header {
 }
 
 .expense-item .remove-expense-btn {
-    margin-left: 10px;
     padding: 5px 10px;
     background-color: #cf5454;
     color: #fff;
@@ -33,7 +32,6 @@ header {
 }
 
 .income-item .remove-income-btn {
-    margin-left: 10px;
     padding: 5px 10px;
     background-color: #cf5454;
     color: #fff;
@@ -107,7 +105,7 @@ header {
 }
 
 header p:hover {
-    color: rgba(234,44,255,0.6);
+    color: rgba(234, 44, 255, 0.6);
     cursor: pointer;
 }
 
@@ -137,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.979), rgba(234,44,255,0.6));
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.979), rgba(234, 44, 255, 0.6));
     border-radius: 15px;
 }
 
@@ -167,7 +165,7 @@ footer {
 }
 
 h2 {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 nav {
@@ -179,17 +177,17 @@ label {
     font-size: 120%;
 }
 
-input[type="text" i] {
+input[type="text"i] {
     font-size: 120%;
     border-radius: 6px;
 }
 
-input[type="number" i] {
+input[type="number"i] {
     font-size: 120%;
     border-radius: 6px;
 }
 
-select  {
+select {
     font-size: 120%;
 }
 
@@ -198,7 +196,7 @@ select  {
 }
 
 .fa-brands:hover {
-    color: rgba(234,44,255,0.6);
+    color: rgba(234, 44, 255, 0.6);
 }
 
 #add-income-btn:hover,
@@ -206,8 +204,8 @@ select  {
 #submit-name-btn:hover,
 #calculate-budget-btn:hover,
 #print-btn:hover {
-    background-image: linear-gradient(to top right, rgba(234,44,255,0.3), rgba(255, 255, 255, 1), rgba(47, 166, 245, 0.3));
-    transition: all ease-in-out 0.4s;   
+    background-image: linear-gradient(to top right, rgba(234, 44, 255, 0.3), rgba(255, 255, 255, 1), rgba(47, 166, 245, 0.3));
+    transition: all ease-in-out 0.4s;
 }
 
 #calculate-budget-btn:hover {
@@ -216,9 +214,60 @@ select  {
 }
 
 #modal-close-btn {
-    background-color: #cf5454;;
+    background-color: #cf5454;
+    ;
 }
 
 #modal-close-btn:hover {
     background-color: #ce3434
+}
+
+@media screen and (max-width: 750px) {
+
+    .expense-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .income-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expense-item .remove-expense-btn,
+    .income-item .remove-income-btn {
+        margin-top: 20px;
+    }
+
+    body {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #name-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #submit-name-btn {
+        margin-top: 10px;
+    }
+
+    input[type="text" i] {
+        margin-top: 10px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
 }
