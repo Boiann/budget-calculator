@@ -25,21 +25,21 @@ header {
 .expense-item .remove-expense-btn {
     margin-left: 10px;
     padding: 5px 10px;
-    font-size: 14px;
     background-color: #cf5454;
     color: #fff;
     cursor: pointer;
     font-size: 120%;
+    border-radius: 10px;
 }
 
 .income-item .remove-income-btn {
     margin-left: 10px;
     padding: 5px 10px;
-    font-size: 14px;
     background-color: #cf5454;
     color: #fff;
     cursor: pointer;
     font-size: 120%;
+    border-radius: 10px;
 }
 
 .expense-item .remove-expense-btn:hover,
@@ -59,6 +59,7 @@ header {
     cursor: pointer;
     margin-left: 10px;
     padding: 5px 10px;
+    border-radius: 10px;
 }
 
 #reset-form-btn:hover {
@@ -87,11 +88,13 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 16px;
     text-align: center;
+    border-radius: 10px;
 }
 
 #modal-close-btn {
     margin-top: 8px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .hidden {
@@ -112,7 +115,7 @@ button {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-size: 120%;
-    transition: ease-in-out 0.9;
+    border-radius: 10px;
 }
 
 body {
@@ -178,10 +181,12 @@ label {
 
 input[type="text" i] {
     font-size: 120%;
+    border-radius: 6px;
 }
 
 input[type="number" i] {
     font-size: 120%;
+    border-radius: 6px;
 }
 
 select  {
