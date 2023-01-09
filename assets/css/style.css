@@ -26,9 +26,8 @@ header {
     margin-left: 10px;
     padding: 5px 10px;
     font-size: 14px;
-    background-color: #ff0000;
+    background-color: #cf5454;
     color: #fff;
-    border: none;
     cursor: pointer;
     font-size: 120%;
 }
@@ -37,11 +36,15 @@ header {
     margin-left: 10px;
     padding: 5px 10px;
     font-size: 14px;
-    background-color: #ff0000;
+    background-color: #cf5454;
     color: #fff;
-    border: none;
     cursor: pointer;
     font-size: 120%;
+}
+
+.expense-item .remove-expense-btn:hover,
+.income-item .remove-income-btn:hover {
+    background-color: #ce3434;
 }
 
 #budget {
@@ -51,9 +54,17 @@ header {
 }
 
 #reset-form-btn {
-    background-color: #be3f3f;
+    background-color: #cf5454;
     margin-bottom: 20px;
     cursor: pointer;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+#reset-form-btn:hover {
+    background-color: #ce3434;
+    transform: scale(1.1);
+    transition: all 0.4s;
 }
 
 #modal-overlay {
@@ -89,12 +100,11 @@ header {
 
 #date-time-display {
     font-size: 130%;
-    color: #ff0000;
     margin: 20px 0;
 }
 
 header p:hover {
-    color: blue;
+    color: rgba(234,44,255,0.6);
     cursor: pointer;
 }
 
@@ -102,12 +112,13 @@ button {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-size: 120%;
+    transition: ease-in-out 0.9;
 }
 
 body {
     margin: 2% 5% 2%;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to top right, rgba(47, 166, 245, 0.3), rgba(234,44,255,0.3));
+    background-image: linear-gradient(to top right, rgba(47, 166, 245, 0.6), rgba(255, 255, 255, 0.979));
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 110%;
@@ -123,7 +134,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to bottom left, rgba(47, 166, 245, 0.2), rgba(234,44,255,0.2));
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.979), rgba(234,44,255,0.6));
     border-radius: 15px;
 }
 
@@ -179,4 +190,22 @@ select  {
 
 .fa-brands {
     font-size: 150%;
+}
+
+.fa-brands:hover {
+    color: rgba(234,44,255,0.6);
+}
+
+#add-income-btn:hover,
+#add-expense-btn:hover,
+#submit-name-btn:hover,
+#calculate-budget-btn:hover,
+#print-btn:hover {
+    background-image: linear-gradient(to top right, rgba(234,44,255,0.3), rgba(255, 255, 255, 1), rgba(47, 166, 245, 0.3));
+    transition: all ease-in-out 0.4s;   
+}
+
+#calculate-budget-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.4s;
 }
