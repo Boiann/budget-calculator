@@ -21,16 +21,16 @@
     <header>
         <!-- Image downloaded from flaticon.com, author = zero_wing,
         https://www.flaticon.com/free-icons/expenses", Expenses icons created by zero_wing -->
-        <img src="assets/images/budget_favicon_&_logo.png" alt="logo" width="40" height="40">
+        <img src="assets/images/budget_favicon_&_logo.png" alt="Logo budgeting image" width="40" height="40">
         <h1>BUDGET CALCULATOR</h1>
         <nav>
-            <p title="Learn more about the budget calculator" id="about" aria-label="Learn more about the budget calculator">About</p>
+            <h3 title="Learn more about the budget calculator" id="about">About</h3>
         </nav>
     </header>
     <!-- Calculation section, all the inputs and calculations are done inside this section -->
     <section class="calculation">
         <!-- Currency selector -->
-        <section class="currency-name">
+        <div class="currency-name">
             <div id="currency-box">
                 <label for="currency" aria-label="Currency selection box">Currency:</label>
                 <select id="currency" aria-label="Currency selection options">
@@ -45,16 +45,14 @@
                 <input type="text" id="name" required aria-label="Enter your name here">
                 <button type="submit" id="submit-name-btn" aria-label="Submit your name">Submit</button>
             </form>
-        </section>
+        </div>
         <!-- 'Main' budget calculation form wit all the name/value inputs for income/expenses
         and associated add/remove buttons and the end result text display -->
-        <form id="budget-calculator-form" aria-label="Budget calculator form">
-            <!-- Form for income/expenses -->
-            <form aria-label="Income and expenses form">
+            <form id="budget-calculator-form" aria-label="Budget calculator form">
                 <!-- Income section of the form with inputs and associated buttons -->
                 <h2>Income:</h2>
                 <br>
-                <div id="income-container" aria-label="Income container">
+                <div id="income-container">
                     <div class="income-item">
                         <input type="text" placeholder="Income name" required aria-label="Income name input field">
                         <input type="number" placeholder="Income amount" class="income" required aria-label="Income amount input field">
@@ -68,7 +66,7 @@
                 <!-- Expense section of the form with inputs and associated buttons -->
                 <h2>Expenses:</h2>
                 <br>
-                <div id="expense-container" aria-label="Income container">
+                <div id="expense-container">
                     <div class="expense-item">
                         <input type="text" placeholder="Expense name" aria-label="Expense name input field">
                         <input type="number" placeholder="Expense amount" class="expense" aria-label="Expense amount input field">
@@ -86,7 +84,6 @@
             <p id="budget"></p>
             <button type="button" id="calculate-budget-btn" aria-label="Calculate budget button">Calculate Budget!</button>
             <br>
-        </form>
         <!-- Print button -->
         <button type="button" id="print-btn" aria-label="Print button">Print</button>
         <!-- Date and time -->

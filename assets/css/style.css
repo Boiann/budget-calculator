@@ -20,13 +20,9 @@ nav {
     font-weight: 500;
 }
 
-header p:hover {
+header h3:hover {
     color: rgba(234, 44, 255, 0.6);
     cursor: pointer;
-}
-
-#about {
-    text-decoration: underline;
 }
 
 /* Income and expense containers flex */
@@ -220,12 +216,12 @@ label {
     font-size: 120%;
 }
 
-input[type="text"i] {
+input[type="text"] {
     font-size: 120%;
     border-radius: 6px;
 }
 
-input[type="number"i] {
+input[type="number"] {
     font-size: 120%;
     border-radius: 6px;
 }
@@ -292,7 +288,7 @@ footer {
         margin-top: 10px;
     }
 
-    input[type="text"i] {
+    input[type="text"] {
         margin-top: 10px;
     }
 
