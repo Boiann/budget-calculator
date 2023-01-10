@@ -35,26 +35,26 @@
 The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the HTML and CSS code used and the [JSHint Code Quality Tool](https://jshint.com/) was used to validate Javascript used.
 
  * Results of HTML validation
- <!-- image -->
+ ![HTML validation](assets/images/readme_imgs/testing_imgs/validation/html_validation.png)
  * Results of CSS validation
- <!-- image -->
+ ![CSS validation](assets/images/readme_imgs/testing_imgs/validation/css_validation.png)
  * Results of JS validation
- <!-- image -->
+ ![Javascript validation](assets/images/readme_imgs/testing_imgs/validation/js_validation.png)
 
 ### **Lighthouse**
 The performance test of all the page was done with Lighthouse through Google Chrome Developer Tools, both for desktop and mobile devices.
 
 * Lighthouse results for desktop site
-<!-- image -->
+![Lighthouse results for desktop site](assets/images/readme_imgs/testing_imgs/lighthouse/lighthouse_desktop.png)
 * Lighthouse results for mobile site
-<!-- image -->
+![Lighthouse results for mobile site](assets/images/readme_imgs/testing_imgs/lighthouse/lighthouse_mobile.png)
 ---
 [Back to top ⇧](#budget-calculator---testing)
 
 ## **Accessibility**
 ### **WAVE WebAim**
 The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web accessibility evaluation tool was used to check for accessibility standards. The page passes with zero errors.
-<!-- image -->
+![Wave WebAim results](assets/images/readme_imgs/testing_imgs/wave/wave_eval.png)
 ---
 [Back to top ⇧](#budget-calculator---testing)
 
@@ -137,7 +137,7 @@ The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web 
 #### **Responsiveness**
 Responsiveness for the website was thoroughly tested for devices up to 320px wide. 
 The website still works on a device 295px wide, with visible problems with income/expenses input fields below that width.
-<!-- image -->
+![Responsiveness test](assets/images/readme_imgs/testing_imgs/responsive/responsive_test.gif)
 ---
 [Back to top ⇧](#budget-calculator---testing)
 
@@ -156,7 +156,7 @@ The author actually accidentally discovered the ability to enter the letter 'e' 
 
 ## **Browser compatibility**
 The website was tested on the following browsers with no issues found: Google Chrome, Mozzilla Firefox, Microsoft Edge and Opera Browser.
-<!-- image -->
+![Browsers compatibility](assets/images/readme_imgs/testing_imgs/browsers/browsers.png)
 ---
 
 [Back to top ⇧](#budget-calculator---testing)
