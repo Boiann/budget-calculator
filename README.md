@@ -3,7 +3,7 @@
 Budget Calculator is a Project 2 for Code Institute Full-stack development program: HTML/CSS Essentials.
 Made with passion for personal use of the author in the future, and for anyone interested in a clean and fast budgeting option.
 
-<!-- Responsive website image -->
+![Responsive website image](assets/images/readme_imgs/main_imgs/general/responsive.png)
 
 Visit the live site [Here.](https://boiann.github.io/budget-calculator "Link to Budget Calculator")
 
@@ -98,7 +98,7 @@ Having developed this page, the author feels it will be much easier and nicer to
 
 ### **Colour Scheme**
 
-Colour Palette image
+![Colour palette](assets/images/readme_imgs/main_imgs/general/colors_used.png)
 
 The colours used in the page are blue and pink/purple and various shades and opacity values of the same.
 For the add/remove buttons the red and blue are used.
@@ -117,7 +117,7 @@ The font has a back-up font in case the selected doesn't load for the user, sans
 
 ### **Imagery**
 
-<!-- image  -->
+![Logo and favicon image](assets/images/budget_favicon_%26_logo.png)
 
 The image is used as the logo and favicon.
 It was also used as a source for the inspiration for the general colour use through the project.
