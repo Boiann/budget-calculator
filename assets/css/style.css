@@ -1,9 +1,12 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Smooth scrolling for the whole page */
 html {
     scroll-behavior: smooth;
 }
 
+/* Header styling and flex */
 header {
     display: flex;
     justify-content: space-evenly;
@@ -12,6 +15,17 @@ header {
     margin-bottom: 20px;
 }
 
+nav {
+    font-size: 120%;
+    font-weight: 500;
+}
+
+header p:hover {
+    color: rgba(234, 44, 255, 0.6);
+    cursor: pointer;
+}
+
+/* Income and expense containers flex */
 .expense-item {
     display: flex;
     margin-bottom: 10px;
@@ -22,7 +36,8 @@ header {
     margin-bottom: 10px;
 }
 
-.expense-item .remove-expense-btn {
+/* Income and expense remove buttons styling */
+.expense-item .remove-expense-btn, .income-item .remove-income-btn {
     padding: 5px 10px;
     background-color: #cf5454;
     color: #fff;
@@ -31,26 +46,20 @@ header {
     border-radius: 10px;
 }
 
-.income-item .remove-income-btn {
-    padding: 5px 10px;
-    background-color: #cf5454;
-    color: #fff;
-    cursor: pointer;
-    font-size: 120%;
-    border-radius: 10px;
-}
-
+/* Hover styling for 'remove' buttons */
 .expense-item .remove-expense-btn:hover,
 .income-item .remove-income-btn:hover {
     background-color: #ce3434;
 }
 
+/* Calculated budget display style */
 #budget {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 150%;
     font-weight: bold;
 }
 
+/* Reset button styling */
 #reset-form-btn {
     background-color: #cf5454;
     margin-bottom: 20px;
@@ -66,6 +75,7 @@ header {
     transition: all 0.4s;
 }
 
+/* Modal and overlay styling */
 #modal-overlay {
     position: fixed;
     top: 0;
@@ -95,20 +105,28 @@ header {
     border-radius: 10px;
 }
 
+#modal-close-btn {
+    background-color: #cf5454;
+    ;
+}
+
+#modal-close-btn:hover {
+    background-color: #ce3434
+}
+
+
+/* 'Hidden' class applied to hide/show the modal */
 .hidden {
     display: none;
 }
 
+/* Date and time styling */
 #date-time-display {
     font-size: 130%;
     margin: 20px 0;
 }
 
-header p:hover {
-    color: rgba(234, 44, 255, 0.6);
-    cursor: pointer;
-}
-
+/* All buttons styling */
 button {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -116,6 +134,22 @@ button {
     border-radius: 10px;
 }
 
+/* Buttons hover styling */
+#add-income-btn:hover,
+#add-expense-btn:hover,
+#submit-name-btn:hover,
+#calculate-budget-btn:hover,
+#print-btn:hover {
+    background-image: linear-gradient(to top right, rgba(234, 44, 255, 0.3), rgba(255, 255, 255, 1), rgba(47, 166, 245, 0.3));
+    transition: all ease-in-out 0.4s;
+}
+
+#calculate-budget-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+/* Body global settings */
 body {
     margin: 2% 5% 2%;
     font-family: 'Roboto', sans-serif;
@@ -125,12 +159,14 @@ body {
     font-size: 110%;
 }
 
-.currnecy-name {
+/* Currency and selection styling */
+.currency-name {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Calculation section styling */
 .calculation {
     display: flex;
     flex-direction: column;
@@ -139,19 +175,14 @@ body {
     border-radius: 15px;
 }
 
+/* Form styling */
 #budget-calculator-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px 0 70px;
-}
-
+/* Various form elements styling */
 #currency-box {
     padding: 20px 0;
 }
@@ -166,11 +197,6 @@ footer {
 
 h2 {
     margin: 0 auto;
-}
-
-nav {
-    font-size: 120%;
-    font-weight: 500;
 }
 
 label {
@@ -191,6 +217,15 @@ select {
     font-size: 120%;
 }
 
+/* Footer styling and flex */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0 70px;
+}
+
+/* GitHub icon styling */
 .fa-brands {
     font-size: 150%;
 }
@@ -199,29 +234,9 @@ select {
     color: rgba(234, 44, 255, 0.6);
 }
 
-#add-income-btn:hover,
-#add-expense-btn:hover,
-#submit-name-btn:hover,
-#calculate-budget-btn:hover,
-#print-btn:hover {
-    background-image: linear-gradient(to top right, rgba(234, 44, 255, 0.3), rgba(255, 255, 255, 1), rgba(47, 166, 245, 0.3));
-    transition: all ease-in-out 0.4s;
-}
+/* Media queries */
 
-#calculate-budget-btn:hover {
-    transform: scale(1.1);
-    transition: all 0.4s;
-}
-
-#modal-close-btn {
-    background-color: #cf5454;
-    ;
-}
-
-#modal-close-btn:hover {
-    background-color: #ce3434
-}
-
+/* Media query for screens up to 750 px */
 @media screen and (max-width: 750px) {
 
     .expense-item {
@@ -248,6 +263,7 @@ select {
     }
 }
 
+/* Media query for screens up to 500 px */
 @media screen and (max-width: 500px) {
     #name-form {
         display: flex;
