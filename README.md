@@ -98,21 +98,44 @@ Having developed this page, the author feels it will be much easier and nicer to
 
 Colour Palette image
 
-Short description
+The colours used in the page are blue and pink/purple and various shades and opacity values of the same.
+For the add/remove buttons the red and blue are used.
+
+this colour choice was directly inspired by the logo image used and the whole page is set up to contrast the two colours using linear gradient diagonally.
+Purpose of this was to connect the favicon, logo and the page itself into one cohesive unit always connected with these two colours.
+
+The buttons for adding income/expense are shaded blue with hover effect using darker shade of blue. The remove button for income/expense are shaded red and then darker red on hover.
+Other buttons have linear gradient with both pink and blue on hover.
 
 ### **Typography**
 
-Short description
+The fonts were imported from [Google Fonts](https://fonts.google.com/ "Link to Google fonts page") database.
+Roboto is used throughout the site, quick google search suggested the font as good option for budgeting needs. 
+The font has a back-up font in case the selected doesn't load for the user, sans-serif.
 
 ### **Imagery**
 
-image 
+<!-- image  -->
 
-short description
+The image is used as the logo and favicon.
+It was also used as a source for the inspiration for the general colour use through the project.
+Source credited in the [Credits](#credits) cection of this README.
 
 ### **Structure**
-
-  * 
+  * Budget Calculator website is structured in a user friendly and easy to navigate way.
+  * When the page first loads, the user is met with all the info needed for successful budget calculation
+  * The title of the page in the header explains what the site is and it's purpose
+  * If additional info is needed there is 'About' clickable element where the user would expect it (top right corner), it opens an overlay modal with additional info
+  * Modal overlays are implemented to warn the user if anything is wrong/needs to have input before the calculation can take place
+  * There is a dropdown menu for currency selection, when it is selected the results will show the currency too
+  * The name input is required becuse it changes the heading of the site to include the user's name
+  * The income/expense inputs for name are not mandatory but the values (numbers) are, this is to facilitate quicker calculation if the user needs it
+  * There are add/remove buttons for income and expenses, the user can add as many as needed, but cannot remove the first input fields
+  * The results of the budget calculation are shown including total income/expenses including the currency selected
+  * The print button is below the 'Calculate Budget' button should the user wish to print the page
+  * The date and time display is present to keep track of when the user did the calculation, it updates every second
+  * The 'Reset Form' button resets the whole page to initial state, clearing all input fields, results and added income/expenses
+  * The footer area contains basic copyright and name of the author plus GitHub icon that opens the author's GitHub profile in new tab
  
 ### **Wireframes**
 
