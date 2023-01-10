@@ -103,7 +103,7 @@ Colour Palette image
 The colours used in the page are blue and pink/purple and various shades and opacity values of the same.
 For the add/remove buttons the red and blue are used.
 
-this colour choice was directly inspired by the logo image used and the whole page is set up to contrast the two colours using linear gradient diagonally.
+This colour choice was directly inspired by the logo image used and the whole page is set up to contrast the two colours using linear gradient diagonally.
 Purpose of this was to connect the favicon, logo and the page itself into one cohesive unit always connected with these two colours.
 
 The buttons for adding income/expense are shaded blue with hover effect using darker shade of blue. The remove button for income/expense are shaded red and then darker red on hover.
@@ -304,9 +304,16 @@ Testing information can be found in a separate testing file [TESTING.md](/TESTIN
 
 ### **Code used and adapted**
 
-* 
+* The author used his previous project, [Boudoir Studio](https://boiann.github.io/boudoir-studio/index.html "Link to Boudoir Studio home page") ( GithHub repository [here](https://boiann.github.io/boudoir-studio/index.html "Link to Boudoir Studio home page") ), as a source for looking up the code for CSS and README purposes.
+* [Favicon and logo image](https://www.flaticon.com/free-icon/budgeting_9320681?term=budget&page=3&position=60&origin=search&related_id=9320681)
+* [CSS gradient](https://www.w3schools.com/css/css3_gradients.asp)
+* [Block input of letter 'e'](https://stackoverflow.com/questions/39291997/how-to-block-e-in-input-type-number)
+* [Modals](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 ### **Websites visited to gather knowledge**
+
+There were many sites visited during the duration of the project.
+[Google](https://google.com/ "Google home page") was used to produce results of the specific query, and [Stack Overflow](https://stackoverflow.com/ "Stack Overflow home page") proved to be the best source of information for various queries/issues. The website that was of immense help and served as a guide was [Learn Javascript](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet "Link to Learn Javascript on CodeAcademy") that was almost always open in a tab of the browser.
 
   
 ###  **Acknowledgments**
