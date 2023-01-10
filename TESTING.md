@@ -65,16 +65,28 @@ The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web 
 ### **Testing User Stories**
 
 #### **First Time Visitor**
-  * **title**
-    * description
+  * **I want to know what is this site for**
+    * When the page loads it is clear right away what this page is for = budget calculation. The minimalistic approach with layout and colours as well as well-defined inputs and buttons should make the user understand what the page is for.
+  * **I want to find additional info/instructions**
+    * As per UX standards, the 'About' clickable element is present in the top right of the page. If the user clicks the text, the modal will pop up showing a welcome message and instructions should the user require them.
+  * **I want to personalize this site for myself**
+    * The page updates the title 'Budget Calculator' to reflect the user's name input and changes to 'User's Budget Calculator adding clear and well defined personalization touch to the page.
 
 #### **Returning User**
-  * **title**
-    * description
+  * **I want to do some calculations quickly**
+    * The income/expense name can be left out, enabling quick calculation should the user require it.
+  * **I want to see the author's other work**
+    * As per UX standards, the footer area on the bottom page contains the GitHub icon that when clicked on opens the author's GitHub page profile in a separate tab.  
+  * **I want to keep the results for later use**
+    * Just below the 'Calculate Budget' button the user will find a handy 'Print' button allowing for printed results of calculation to be saved for future use/bookkeeping/accounting. 
 
 #### **Website Owner**
-  * **title**
-    * description
+  * **I want to give a smooth and fast experience**
+    * The project consists of only one page and is minimalistic in content that could slow the page down (using only one image). There are no excessive animations/transition, allowing for smooth and fast experience.
+  * **I want to use the site regularly**
+    * As one of the purposes of the prject was to develop something that the author will use regularly himself, the page is set up in a way that will allow for quick or detailed calculations depending on the need. Being fast, stable and easy on the eyes will make users come back to the page (author included).
+  * **I want no bugs or issues**
+    * The javascript used is robust and bug-free, allowing for fast and stable operations with no issues between html, css and javascript.
 
 ---
 [Back to top ⇧](#budget-calculator---testing)    
