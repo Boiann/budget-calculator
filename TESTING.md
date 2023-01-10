@@ -91,46 +91,46 @@ The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web 
 ### **Full Testing**
 
 #### **Features**
-**Testing features present on all pages of the website:**
+**Testing present features:**
 
 * Tooltip showing for 'About' and the logo image, hover effect on 'About' text in the header and modal opening, modal close button hover effect
-<!-- image -->
+![About modal](assets/images/readme_imgs/shared_imgs_features/about_modal.gif)
 
 * Hover effect on all the buttons present in the page
-<!-- image -->
+![Buttons hover](assets/images/readme_imgs/shared_imgs_features/hover_buttons.gif)
 
 * Hover effect and new tab opening when the user clicks GitHub icon
-<!-- image -->
+![Githup opening](assets/images/readme_imgs/shared_imgs_features/github_open.gif)
 
 * Currency selector dropdown menu
-<!-- image -->
+![Currency selection](assets/images/readme_imgs/shared_imgs_features/currency_select.gif)
 
 * Name input welcome message and page title change
-<!-- image -->
+![Name input modal](assets/images/readme_imgs/shared_imgs_features/name_input_modal.gif)
 
 * Adding more income/expense input fields, removal of added income/expense input fields & inability to remove first income/expense input fields
-<!-- image -->
+![Add & remove input fields](assets/images/readme_imgs/shared_imgs_features/add_remove_inputs.gif)
 
 * Inability to calculate budget unless the name is entered, modal
-<!-- image -->
+![Name welcome modal](assets/images/readme_imgs/shared_imgs_features/enter_name.gif)
 
 * Inability to calculate budget unless positive value number is entered in income/expense, modal
-<!-- image -->
+![Wrong value modal](assets/images/readme_imgs/shared_imgs_features/positive_numbers.gif)
 
 * Calculate budget button showing results and selected currency
-<!-- image -->
+![Calculate showing selected currency](assets/images/readme_imgs/shared_imgs_features/selected_currency_display.gif)
 
 * Calculate budget button showing results from multiple income/expenses
-<!-- image -->
+![Calculate multiple inputs](assets/images/readme_imgs/shared_imgs_features/multi_input_calculate.gif)
 
 * Print button working
-<!-- image -->
+![Print button working](assets/images/readme_imgs/shared_imgs_features/print_working.gif)
 
 * Time display updates every second
-<!-- image -->
+![Time update](assets/images/readme_imgs/shared_imgs_features/time_update.gif)
 
 * Reset form button resets everything; name, values, added inputs
-<!-- image -->
+![Reset button working](assets/images/readme_imgs/shared_imgs_features/reset_form.gif)
 ---
 [Back to top ⇧](#budget-calculator---testing)
 
@@ -155,18 +155,7 @@ The author actually accidentally discovered the ability to enter the letter 'e' 
 [Back to top ⇧](#budget-calculator---testing)
 
 ## **Browser compatibility**
-The website was tested on the following browsers with no issues found:
-
-* Google Chrome:
-<!-- image -->
-
-* Mozzilla Firefox:
-<!-- image -->
-
-* Microsoft Edge:
-<!-- image -->
-
-* Opera Browser:
+The website was tested on the following browsers with no issues found: Google Chrome, Mozzilla Firefox, Microsoft Edge and Opera Browser.
 <!-- image -->
 ---
 

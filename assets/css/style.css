@@ -170,6 +170,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 110%;
+    min-height: 100vh;
 }
 
 /* Currency and selection styling */
@@ -235,7 +236,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0 70px;
+    margin: 20px 0;
 }
 
 /* GitHub icon styling */
