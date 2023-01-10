@@ -24,7 +24,7 @@
         <img src="assets/images/budget_favicon_&_logo.png" alt="logo" width="40" height="40">
         <h1>BUDGET CALCULATOR</h1>
         <nav>
-            <p title="Learn more about the budget calculator" id="about">About</p>
+            <p title="Learn more about the budget calculator" id="about" aria-label="Learn more about the budget calculator">About</p>
         </nav>
     </header>
     <!-- Calculation section, all the inputs and calculations are done inside this section -->
@@ -32,8 +32,8 @@
         <!-- Currency selector -->
         <section class="currency-name">
             <div id="currency-box">
-                <label for="currency">Currency:</label>
-                <select id="currency">
+                <label for="currency" aria-label="Currency selection box">Currency:</label>
+                <select id="currency" aria-label="Currency selection options">
                     <option value="Euro">Euro</option>
                     <option value="Pound">Pound</option>
                     <option value="Dollar">Dollar</option>
@@ -41,64 +41,64 @@
             </div>
             <!-- User's name input -->
             <form id="name-form">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" required>
-                <button type="submit" id="submit-name-btn">Submit</button>
+                <label for="name" aria-label="Name input box">Your Name:</label>
+                <input type="text" id="name" required aria-label="Enter your name here">
+                <button type="submit" id="submit-name-btn" aria-label="Submit your name">Submit</button>
             </form>
         </section>
         <!-- 'Main' budget calculation form wit all the name/value inputs for income/expenses
         and associated add/remove buttons and the end result text display -->
-        <form id="budget-calculator-form">
+        <form id="budget-calculator-form" aria-label="Budget calculator form">
             <!-- Form for income/expenses -->
-            <form>
+            <form aria-label="Income and expenses form">
                 <!-- Income section of the form with inputs and associated buttons -->
                 <h2>Income:</h2>
                 <br>
-                <div id="income-container">
+                <div id="income-container" aria-label="Income container">
                     <div class="income-item">
-                        <input type="text" placeholder="Income name" required>
-                        <input type="number" placeholder="Income amount" class="income" required>
+                        <input type="text" placeholder="Income name" required aria-label="Income name input field">
+                        <input type="number" placeholder="Income amount" class="income" required aria-label="Income amount input field">
                         <!-- Remove income button -->
-                        <button type="button" class="remove-income-btn">Remove</button>
+                        <button type="button" class="remove-income-btn" aria-label="Remove income input fields">Remove</button>
                     </div>
                 </div>
                 <!-- Add income button -->
-                <button type="button" id="add-income-btn">Add Income</button>
+                <button type="button" id="add-income-btn" aria-label="Add income input fields">Add Income</button>
                 <br>
                 <!-- Expense section of the form with inputs and associated buttons -->
                 <h2>Expenses:</h2>
                 <br>
-                <div id="expense-container">
+                <div id="expense-container" aria-label="Income container">
                     <div class="expense-item">
-                        <input type="text" placeholder="Expense name">
-                        <input type="number" placeholder="Expense amount" class="expense">
+                        <input type="text" placeholder="Expense name" aria-label="Expense name input field">
+                        <input type="number" placeholder="Expense amount" class="expense" aria-label="Expense amount input field">
                         <!-- Remove expense button -->
-                        <button type="button" class="remove-expense-btn">Remove</button>
+                        <button type="button" class="remove-expense-btn" aria-label="Remove expense input fields">Remove</button>
                     </div>
                 </div>
                 <!-- Add expense button -->
-                <button type="button" id="add-expense-btn">Add expense</button>
+                <button type="button" id="add-expense-btn" aria-label="Add expense input fields">Add expense</button>
                 <br>
             </form>
             <!-- Total income/expenses and budget display after the user clicks the 'calculate budget' button -->
             <div id="total-income"></div>
             <div id="total-expenses"></div>
             <p id="budget"></p>
-            <button type="button" id="calculate-budget-btn">Calculate Budget!</button>
+            <button type="button" id="calculate-budget-btn" aria-label="Calculate budget button">Calculate Budget!</button>
             <br>
         </form>
         <!-- Print button -->
-        <button type="button" id="print-btn">Print</button>
+        <button type="button" id="print-btn" aria-label="Print button">Print</button>
         <!-- Date and time -->
         <div id="date-time-display"></div>
         <!-- Reset the whole page (name, and all the inputs) button -->
-        <button type="reset" id="reset-form-btn">Reset Form</button>
+        <button type="reset" id="reset-form-btn" aria-label="Reset form button">Reset Form</button>
     </section>
     <!-- Modal overlay section with close the modal button -->
     <div id="modal-overlay" class="hidden">
         <div id="modal">
             <div id="modal-message"></div>
-            <button id="modal-close-btn">Close</button>
+            <button id="modal-close-btn" aria-label="Close the modal button">Close</button>
         </div>
     </div>
     <!-- Footer with clickable GitHub icon and copyright -->
@@ -106,7 +106,7 @@
         <div class="github">
             <a href="https://github.com/Boiann" target="_blank" rel="noopener"
                 aria-label="Author's GitHub page (link opens in a new tab)">
-            <i class="fa-brands fa-github"></i></a>
+                <i class="fa-brands fa-github"></i></a>
         </div>
         <div class="copyright">
             <p><i class="fa-regular fa-copyright"></i> Bojan Bakaric 2023</p>
@@ -115,4 +115,5 @@
     <!-- Script connecting the Javascript to the page -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

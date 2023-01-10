@@ -24,6 +24,7 @@ header p:hover {
     color: rgba(234, 44, 255, 0.6);
     cursor: pointer;
 }
+
 #about {
     text-decoration: underline;
 }
@@ -40,7 +41,8 @@ header p:hover {
 }
 
 /* Income and expense remove buttons styling */
-.expense-item .remove-expense-btn, .income-item .remove-income-btn {
+.expense-item .remove-expense-btn,
+.income-item .remove-income-btn {
     padding: 5px 10px;
     background-color: #cf5454;
     color: #fff;
@@ -278,7 +280,7 @@ footer {
         margin-top: 10px;
     }
 
-    input[type="text" i] {
+    input[type="text"i] {
         margin-top: 10px;
     }
 

@@ -1,23 +1,3 @@
-/*
-Funcions needed:
-
-- Add event listeners to clculate budget and reset form
--Calculate budget
--Reset form
--Have the option of adding more expense input fields
--Have the option of adding more income input fields
--Have the currency be selected and displayed in the final result (possibly use dropdown menu)
--Have the inputs be mandatory, add warnings if the inputs are empty
--Have a message display for the user after name input
-
-Extra bits, add if possible:
-
-- Add date to the page
-- Add print option
-- Add some sort of visual representation of the calculated budget ( look into charts, API-s etc)
-- Option to store the data locally ( remember the budget when the user returns)
-*/
-
 // Wait for the DOM to load before running Javascript
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -69,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('total-income').innerHTML = `Total income: ${totalIncomes} ${currency}s`;
         }
     }
-
 
     // Get the add expense button and add a click event listener
     const addExpenseBtn = document.getElementById('add-expense-btn');
@@ -238,7 +217,5 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>`;
         document.querySelector('#modal-overlay').classList.remove('hidden');
     });
-
-
 
 });
