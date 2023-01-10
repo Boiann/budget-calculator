@@ -121,7 +121,7 @@ The font has a back-up font in case the selected doesn't load for the user, sans
 
 The image is used as the logo and favicon.
 It was also used as a source for the inspiration for the general colour use through the project.
-Source credited in the [Credits](#credits) cection of this README and as a tooltip when the user hovers over the logo image.
+Source credited in the [Credits](#credits) section of this README and as a tooltip when the user hovers over the logo image.
 
 
 ### **Structure**
@@ -131,7 +131,7 @@ Source credited in the [Credits](#credits) cection of this README and as a toolt
   * If additional info is needed there is 'About' clickable element where the user would expect it (top right corner), it opens an overlay modal with additional info
   * Modal overlays are implemented to warn the user if anything is wrong/needs to have input before the calculation can take place
   * There is a dropdown menu for currency selection, when it is selected the results will show the currency too
-  * The name input is required becuse it changes the heading of the site to include the user's name
+  * The name input is required because it changes the heading of the site to include the user's name
   * The income/expense inputs for name are not mandatory but the values (numbers) are, this is to facilitate quicker calculation if the user needs it
   * There are add/remove buttons for income and expenses, the user can add as many as needed, but cannot remove the first input fields
   * The results of the budget calculation are shown including total income/expenses including the currency selected

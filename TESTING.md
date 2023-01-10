@@ -1,6 +1,3 @@
-<!-- Code for readme adapted from author's own project (Portfolio 1),
-https://github.com/Boiann/boudoir-studio -->
-
 # **Budget Calculator - Testing** 
 
 [Main README.md file](/README.md)
@@ -84,7 +81,7 @@ The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web 
   * **I want to give a smooth and fast experience**
     * The project consists of only one page and is minimalistic in content that could slow the page down (using only one image). There are no excessive animations/transition, allowing for smooth and fast experience.
   * **I want to use the site regularly**
-    * As one of the purposes of the prject was to develop something that the author will use regularly himself, the page is set up in a way that will allow for quick or detailed calculations depending on the need. Being fast, stable and easy on the eyes will make users come back to the page (author included).
+    * As one of the purposes of the project was to develop something that the author will use regularly himself, the page is set up in a way that will allow for quick or detailed calculations depending on the need. Being fast, stable and easy on the eyes will make users come back to the page (author included).
   * **I want no bugs or issues**
     * The javascript used is robust and bug-free, allowing for fast and stable operations with no issues between html, css and javascript.
 
@@ -159,7 +156,7 @@ The website still works on a device 295px wide, with visible problems with incom
 ### **Solved Bugs**
 
 * **User being able to enter the letter 'e' as the value for the amount in the income/expense input fields.** 
-The author actually accidentaly discovered the ability to enter the letter 'e' while testing the project. It took a lot of research/trial and error before the issue was rectified. The user is no longer able to enter the letter 'e' via keyboard, only by copy/paste the letter into the input field, but if that is the case the modal warning about entering positive values will fire.
+The author actually accidentally discovered the ability to enter the letter 'e' while testing the project. It took a lot of research/trial and error before the issue was rectified. The user is no longer able to enter the letter 'e' via keyboard, only by copy/paste the letter into the input field, but if that is the case the modal warning about entering positive values will fire.
 ---
 [Back to top ⇧](#budget-calculator---testing)
 
