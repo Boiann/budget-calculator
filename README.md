@@ -253,17 +253,40 @@ For future implementations, the developer would like to add google pie chart API
 
 ### **Languages Used**
 
-* html, css, javasript
+* [HTML](https://en.wikipedia.org/wiki/HTML "Link to html wikipedia page") - The website content was developed using HTML language.
+* [CSS](https://en.wikipedia.org/wiki/CSS "Link to css wikipedia page") - The website was styled using custom CSS in an external file.
+* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript "Link to javascript wikipedia page") - Used to handle all the functionality, interactions and calculations.
 
 ### **Programs Used**
 
-* 
+* [GitHub](https://github.com/ "Link to GitHub page") - Source code hosted on GitHub, deployed using Git Pages.
+* [GitPod](https://www.gitpod.io/ "Link to GitPod page") - Used to commit, comment and push code during the development process.
+* [Font Awesome](https://fontawesome.com/ "Link to Font Awesome page") - GitHub icon was obtained from Font Awesome.
+* [Balsamiq](https://balsamiq.com/ "Link to Balsamiq page") - Used to create wireframes and website structure map for the project.
+* [Visual Studio Code + Spell Checker add on](https://code.visualstudio.com/ "Link to Visual Studio page") - Used to spell-check the html and css code
+* [Google Keep](https://keep.google.com/ "Link to Google Keep page") - Used to make notes during the project duration
+* [LanguageTool](https://languagetool.org/ "Link to Language Tool page") - Used to spell-check the contents of README.md
+* [Google Fonts](https://fonts.google.com/ "Link to Google fonts page") - Used to import fonts to the project
+* [GifCap](https://gifcap.dev/ "Link to GifCap page") - used to capture gif-s of the project 
 
 [Back to top ⇧](#budget-calculator)
 
 ---
 
 ## **Deployment**
+
+This project was developed using [GitPod](https://www.gitpod.io/ "Link to GitPod site"), which was then committed and pushed to GitHub using the GitPod terminal.
+
+### **Deploying on GitHub Pages**
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate the [GitHub Repository](https://github.com/Boiann/budget-calculator "Link to GitHub Repository").
+3. At the top of the repository, select Settings from the menu items.
+4. Scroll down the Settings page to the "Pages" section.
+5. Under "Source" click the drop-down menu labelled "None" and select "Main".
+6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
+7. Scroll back down to the "Pages" section to retrieve the deployed link.
 
 [Back to top ⇧](#budget-calculator)
 
