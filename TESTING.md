@@ -52,9 +52,12 @@ The performance test of all the page was done with Lighthouse through Google Chr
 [Back to top ⇧](#budget-calculator---testing)
 
 ## **Accessibility**
+
 ### **WAVE WebAim**
+
 The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web accessibility evaluation tool was used to check for accessibility standards. The page passes with zero errors.
 ![Wave WebAim results](assets/images/readme_imgs/testing_imgs/wave/wave_eval.png)
+
 ---
 [Back to top ⇧](#budget-calculator---testing)
 
@@ -155,8 +158,10 @@ The author actually accidentally discovered the ability to enter the letter 'e' 
 [Back to top ⇧](#budget-calculator---testing)
 
 ## **Browser compatibility**
+
 The website was tested on the following browsers with no issues found: Google Chrome, Mozzilla Firefox, Microsoft Edge and Opera Browser.
 ![Browsers compatibility](assets/images/readme_imgs/testing_imgs/browsers/browsers.png)
+
 ---
 
 [Back to top ⇧](#budget-calculator---testing)

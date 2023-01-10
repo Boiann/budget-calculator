@@ -28,6 +28,7 @@
             <p title="Learn more about the budget calculator" id="about">About</p>
         </nav>
     </header>
+
     <!-- Calculation section, all the inputs and calculations are done inside this section -->
     <section class="calculation">
         <!-- Currency selector -->
@@ -40,6 +41,7 @@
                     <option value="Dollar">Dollar</option>
                 </select>
             </div>
+
             <!-- User's name input -->
             <form id="name-form">
                 <label for="name" aria-label="Name input box">Your Name:</label>
@@ -47,6 +49,7 @@
                 <button type="submit" id="submit-name-btn" aria-label="Submit your name">Submit</button>
             </form>
         </div>
+
         <!-- 'Main' budget calculation form with all the name/value inputs for income/expenses
         and associated add/remove buttons and the end result text display -->
             <form id="budget-calculator-form" aria-label="Budget calculator form">
@@ -64,6 +67,7 @@
                 <!-- Add income button -->
                 <button type="button" id="add-income-btn" aria-label="Add income input fields">Add Income</button>
                 <br>
+
                 <!-- Expense section of the form with inputs and associated buttons -->
                 <h2>Expenses:</h2>
                 <br>
@@ -79,19 +83,24 @@
                 <button type="button" id="add-expense-btn" aria-label="Add expense input fields">Add expense</button>
                 <br>
             </form>
+
             <!-- Total income/expenses and budget display after the user clicks the 'calculate budget' button -->
             <div id="total-income"></div>
             <div id="total-expenses"></div>
             <p id="budget"></p>
             <button type="button" id="calculate-budget-btn" aria-label="Calculate budget button">Calculate Budget!</button>
             <br>
+            
         <!-- Print button -->
         <button type="button" id="print-btn" aria-label="Print button">Print</button>
+        
         <!-- Date and time -->
         <div id="date-time-display"></div>
+        
         <!-- Reset the whole page (name, and all the inputs) button -->
         <button type="reset" id="reset-form-btn" aria-label="Reset form button">Reset Form</button>
     </section>
+
     <!-- Modal overlay section with close the modal button -->
     <div id="modal-overlay" class="hidden">
         <div id="modal">
@@ -99,6 +108,7 @@
             <button id="modal-close-btn" aria-label="Close the modal button">Close</button>
         </div>
     </div>
+
     <!-- Footer with clickable GitHub icon and copyright -->
     <footer>
         <div class="github">
@@ -110,8 +120,8 @@
             <p><i class="fa-regular fa-copyright"></i> Bojan Bakaric 2023</p>
         </div>
     </footer>
+
     <!-- Script connecting the Javascript to the page -->
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
