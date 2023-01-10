@@ -138,9 +138,11 @@ The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web 
 [Back to top ⇧](#budget-calculator---testing)
 
 #### **Responsiveness**
+
 Responsiveness for the website was thoroughly tested for devices up to 320px wide. 
 The website still works on a device 295px wide, with visible problems with income/expenses input fields below that width.
 ![Responsiveness test](assets/images/readme_imgs/testing_imgs/responsive/responsive_test.gif)
+
 ---
 [Back to top ⇧](#budget-calculator---testing)
 
