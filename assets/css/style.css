@@ -20,7 +20,7 @@ nav {
     font-weight: 500;
 }
 
-header h3:hover {
+header p:hover {
     color: rgba(234, 44, 255, 0.6);
     cursor: pointer;
 }
