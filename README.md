@@ -27,6 +27,8 @@ Visit the live site [Here.](https://boiann.github.io/budget-calculator "Link to 
   * [Wireframes](#wireframes)
 
 * [Features](#features)
+  * [Visible Features](#visible-features)
+  * [Invisible Features](#invisible-features)
   * [Future Implementations](#future-implementations)
 
 * [Technologies Used](#technologies-used)
@@ -139,7 +141,49 @@ Source credited in the [Credits](#credits) cection of this README.
  
 ### **Wireframes**
 
-Description and images
+Wireframes for the project were developed right after the idea for the project was chosen. The actual colour use came later when using the logo/favicon image.
+
+Wireframes for Assessment Guide and Project Planning & Ux were made before the ones for the content of the pages themselves.
+<details>
+<summary>Assessment wireframe</summary>
+
+<!-- Assessment guide wireframe image -->
+</details>
+
+<details>
+<summary>Project planning wireframe</summary>
+
+<!-- Project planning wireframe image -->
+</details>
+
+There are three sets of wireframes for the pages, each set corresponding to the level of learning outcome (grade); Pass Performance, Merit Performance and Distinction Performance.
+
+Differences between outcomes were considered early as to allow flexibility when working on the project. Personal, work, family, dependants and health situations were considered to have impact on time available for the project.
+Ideally, maximum time was to be taken to finish the project making the scope bigger.
+
+<details>
+<summary>Pass Performance wireframe</summary>
+
+<!-- Pass wireframe image -->
+</details>
+
+<details>
+<summary>Merit Performance wireframe</summary>
+
+<!-- Merit wireframe image -->
+</details>
+
+<details>
+<summary>Distinction Performance wireframe</summary>
+
+<!-- Distinction wireframe image -->
+</details>
+
+<details>
+<summary>Mobile wireframe</summary>
+
+<!-- Mobile device wireframe image -->
+</details>
 
 [Back to top ⇧](#budget-calculator)
 
@@ -147,13 +191,59 @@ Description and images
 
 ## **Features**
 
-Responsiveness
+All of the features presented in this sections are fully responsive on all devices and screen widths.
+The break points for media-queries are large to 750 px wide displays, 750 px to 500 px wide displays, and anything under 500 px wide. 
+This has been tested for display size of 320 px, but it does work below that limit, up to 295 px width. Please refer to [TESTING.md](/TESTING.md) for more information about responsiveness testing.
 
-Features images/gifs
+### **Visible Features**
+
+* Hover effect on 'About' text in the header and modal opening, modal close button hover effect
+<!-- image -->
+
+* Hover effect on all the buttons present in the page
+<!-- image -->
+
+* Hover effect and new tab opening when the user clicks GitHub icon
+<!-- image -->
+
+* Currency selector dropdown menu
+<!-- image -->
+
+* Name input welcome message and page title change
+<!-- image -->
+
+* Add more income/expense input fields
+<!-- image -->
+
+* Removal of added income/expense input fields & inability to remove first income/expense input fields
+<!-- image -->
+
+* Inability to calculate budget unless the name is entered, modal
+<!-- image -->
+
+* Inability to calculate budget unless positive value number is entered in income/expense
+<!-- image -->
+
+* Calculate budget button showing results and selected currency
+<!-- image -->
+
+* Calculate budget button showing results from multiple income/expenses
+<!-- image -->
+
+* Print button working
+<!-- image -->
+
+* Time display updates every second
+<!-- image -->
+
+* Reset form button resets everything; name, values, added inputs
+<!-- image -->
+
+### **Invisible Features** 
+* User is unable to enter the letter 'e' using the keyboard. For more information about this solved issue please refer to **Solved Bugs** section of [TESTING.md](/TESTING.md).
 
 ### **Future Implementations**
-
-Description
+For future implementations, the developer would like to add google pie chart API displaying the total income/expenses as chart value, as well as research what would be useful for other users in regards to budgeting.
 
 [Back to top ⇧](#budget-calculator)
 
