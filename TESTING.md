@@ -93,11 +93,8 @@ The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web 
 #### **Features**
 **Testing features present on all pages of the website:**
 
-* Hover effect on 'About' text in the header and modal opening, modal close button hover effect
+* Tooltip showing for 'About' and the logo image, hover effect on 'About' text in the header and modal opening, modal close button hover effect
 <!-- image -->
-
-* Tooltip showing for 'About' and the logo image
-<!-- image  -->
 
 * Hover effect on all the buttons present in the page
 <!-- image -->
@@ -111,16 +108,13 @@ The [WAVE WebAIM](https://wave.webaim.org/ "Link to WAVE WebAIM home page") web 
 * Name input welcome message and page title change
 <!-- image -->
 
-* Add more income/expense input fields
-<!-- image -->
-
-* Removal of added income/expense input fields & inability to remove first income/expense input fields
+* Adding more income/expense input fields, removal of added income/expense input fields & inability to remove first income/expense input fields
 <!-- image -->
 
 * Inability to calculate budget unless the name is entered, modal
 <!-- image -->
 
-* Inability to calculate budget unless positive value number is entered in income/expense
+* Inability to calculate budget unless positive value number is entered in income/expense, modal
 <!-- image -->
 
 * Calculate budget button showing results and selected currency

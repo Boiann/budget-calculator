@@ -198,50 +198,44 @@ This has been tested for display size of 320 px, but it does work below that lim
 
 ### **Visible Features**
 
-* Hover effect on 'About' text in the header and modal opening, modal close button hover effect
-<!-- image -->
-
-* Tooltip showing for 'About' and the logo image
-<!-- image  -->
+* Tooltip showing for 'About' and the logo image, hover effect on 'About' text in the header and modal opening, modal close button hover effect
+![About modal](assets/images/readme_imgs/shared_imgs_features/about_modal.gif)
 
 * Hover effect on all the buttons present in the page
-<!-- image -->
+![Buttons hover](assets/images/readme_imgs/shared_imgs_features/hover_buttons.gif)
 
 * Hover effect and new tab opening when the user clicks GitHub icon
-<!-- image -->
+![Githup opening](assets/images/readme_imgs/shared_imgs_features/github_open.gif)
 
 * Currency selector dropdown menu
-<!-- image -->
+![Currency selection](assets/images/readme_imgs/shared_imgs_features/currency_select.gif)
 
 * Name input welcome message and page title change
-<!-- image -->
+![Name input modal](assets/images/readme_imgs/shared_imgs_features/name_input_modal.gif)
 
-* Add more income/expense input fields
-<!-- image -->
-
-* Removal of added income/expense input fields & inability to remove first income/expense input fields
-<!-- image -->
+* Adding more income/expense input fields, removal of added income/expense input fields & inability to remove first income/expense input fields
+![Add & remove input fields](assets/images/readme_imgs/shared_imgs_features/add_remove_inputs.gif)
 
 * Inability to calculate budget unless the name is entered, modal
-<!-- image -->
+![Name welcome modal](assets/images/readme_imgs/shared_imgs_features/enter_name.gif)
 
-* Inability to calculate budget unless positive value number is entered in income/expense
-<!-- image -->
+* Inability to calculate budget unless positive value number is entered in income/expense, modal
+![Wrong value modal](assets/images/readme_imgs/shared_imgs_features/positive_numbers.gif)
 
 * Calculate budget button showing results and selected currency
-<!-- image -->
+![Calculate showing selected currency](assets/images/readme_imgs/shared_imgs_features/selected_currency_display.gif)
 
 * Calculate budget button showing results from multiple income/expenses
-<!-- image -->
+![Calculate multiple inputs](assets/images/readme_imgs/shared_imgs_features/multi_input_calculate.gif)
 
 * Print button working
-<!-- image -->
+![Print button working](assets/images/readme_imgs/shared_imgs_features/print_working.gif)
 
 * Time display updates every second
-<!-- image -->
+![Time update](assets/images/readme_imgs/shared_imgs_features/time_update.gif)
 
 * Reset form button resets everything; name, values, added inputs
-<!-- image -->
+![Reset button working](assets/images/readme_imgs/shared_imgs_features/reset_form.gif)
 
 ### **Invisible Features** 
 * User is unable to enter the letter 'e' using the keyboard. For more information about this solved issue please refer to **Solved Bugs** section of [TESTING.md](/TESTING.md).
