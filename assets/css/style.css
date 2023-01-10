@@ -291,6 +291,10 @@ footer {
     }
 
     #modal-about-text {
-        font-size: 90%;
+        font-size: 70%;
+    }
+
+    #modal-about-text ul li {
+        margin-left: -30px;
     }
 }
