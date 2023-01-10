@@ -146,18 +146,18 @@ Wireframes for the project were developed right after the idea for the project w
 
 Wireframes for Assessment Guide and Project Planning & Ux were made before the ones for the content of the pages themselves.
 <details>
-<summary>Assessment wireframe</summary>
+<summary>Assessment guide wireframe</summary>
 
-<!-- Assessment guide wireframe image -->
+![Assessment guide wireframe](assets/images/readme_imgs/main_imgs/wireframes/Portfolio%202%20Assessment%20Guide.png)
 </details>
 
 <details>
 <summary>Project planning wireframe</summary>
 
-<!-- Project planning wireframe image -->
+![Project planning wireframe](assets/images/readme_imgs/main_imgs/wireframes/Project%202%20planning%20and%20UX.png)
 </details>
 
-There are three sets of wireframes for the pages, each set corresponding to the level of learning outcome (grade); Pass Performance, Merit Performance and Distinction Performance.
+There are three wireframes for the project, each one corresponding to the level of learning outcome (grade); Pass Performance, Merit Performance and Distinction Performance.
 
 Differences between outcomes were considered early as to allow flexibility when working on the project. Personal, work, family, dependants and health situations were considered to have impact on time available for the project.
 Ideally, maximum time was to be taken to finish the project making the scope bigger.
@@ -165,25 +165,25 @@ Ideally, maximum time was to be taken to finish the project making the scope big
 <details>
 <summary>Pass Performance wireframe</summary>
 
-<!-- Pass wireframe image -->
+![Pass Performance wireframe](assets/images/readme_imgs/main_imgs/wireframes/Budget%20project%20pass.png)
 </details>
 
 <details>
 <summary>Merit Performance wireframe</summary>
 
-<!-- Merit wireframe image -->
+![Merit Performance wireframe](assets/images/readme_imgs/main_imgs/wireframes/Budget%20project%20merit.png)
 </details>
 
 <details>
 <summary>Distinction Performance wireframe</summary>
 
-<!-- Distinction wireframe image -->
+![Distinction Performance wireframe](assets/images/readme_imgs/main_imgs/wireframes/Budget%20project%20distinction.png)
 </details>
 
 <details>
 <summary>Mobile wireframe</summary>
 
-<!-- Mobile device wireframe image -->
+![Mobile wireframe](assets/images/readme_imgs/main_imgs/wireframes/Budget%20project%20mobile.png)
 </details>
 
 [Back to top ⇧](#budget-calculator)
