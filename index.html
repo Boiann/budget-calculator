@@ -17,17 +17,19 @@
 </head>
 
 <body>
-
+    <!-- Header containing the logo, title and 'about' clickable element -->
     <header>
+        <!-- Image downloaded from flaticon.com, author = zero_wing,
+        https://www.flaticon.com/free-icons/expenses", Expenses icons created by zero_wing -->
         <img src="assets/images/budget_favicon_&_logo.png" alt="logo" width="40" height="40">
         <h1>BUDGET CALCULATOR</h1>
         <nav>
             <p title="Learn more about the budget calculator" id="about">About</p>
         </nav>
     </header>
-
+    <!-- Calculation section, all the inputs and calculations are done inside this section -->
     <section class="calculation">
-
+        <!-- Currency selector -->
         <section class="currency-name">
             <div id="currency-box">
                 <label for="currency">Currency:</label>
@@ -37,62 +39,69 @@
                     <option value="Dollar">Dollar</option>
                 </select>
             </div>
-
+            <!-- User's name input -->
             <form id="name-form">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" required>
                 <button type="submit" id="submit-name-btn">Submit</button>
             </form>
         </section>
-
+        <!-- 'Main' budget calculation form wit all the name/value inputs for income/expenses
+        and associated add/remove buttons and the end result text display -->
         <form id="budget-calculator-form">
+            <!-- Form for income/expenses -->
             <form>
+                <!-- Income section of the form with inputs and associated buttons -->
                 <h2>Income:</h2>
                 <br>
                 <div id="income-container">
                     <div class="income-item">
                         <input type="text" placeholder="Income name" required>
                         <input type="number" placeholder="Income amount" class="income" required>
+                        <!-- Remove income button -->
                         <button type="button" class="remove-income-btn">Remove</button>
                     </div>
                 </div>
+                <!-- Add income button -->
                 <button type="button" id="add-income-btn">Add Income</button>
                 <br>
-
+                <!-- Expense section of the form with inputs and associated buttons -->
                 <h2>Expenses:</h2>
                 <br>
                 <div id="expense-container">
                     <div class="expense-item">
                         <input type="text" placeholder="Expense name">
                         <input type="number" placeholder="Expense amount" class="expense">
+                        <!-- Remove expense button -->
                         <button type="button" class="remove-expense-btn">Remove</button>
                     </div>
                 </div>
+                <!-- Add expense button -->
                 <button type="button" id="add-expense-btn">Add expense</button>
                 <br>
             </form>
-
+            <!-- Total income/expenses and budget display after the user clicks the 'calculate budget' button -->
             <div id="total-income"></div>
             <div id="total-expenses"></div>
             <p id="budget"></p>
             <button type="button" id="calculate-budget-btn">Calculate Budget!</button>
             <br>
         </form>
-        
+        <!-- Print button -->
         <button type="button" id="print-btn">Print</button>
-
+        <!-- Date and time -->
         <div id="date-time-display"></div>
-
+        <!-- Reset the whole page (name, and all the inputs) button -->
         <button type="reset" id="reset-form-btn">Reset Form</button>
     </section>
-
+    <!-- Modal overlay section with close the modal button -->
     <div id="modal-overlay" class="hidden">
         <div id="modal">
             <div id="modal-message"></div>
             <button id="modal-close-btn">Close</button>
         </div>
     </div>
-
+    <!-- Footer with clickable GitHub icon and copyright -->
     <footer>
         <div class="github">
             <a href="https://github.com/Boiann" target="_blank" rel="noopener"
@@ -103,7 +112,7 @@
             <p><i class="fa-regular fa-copyright"></i> Bojan Bakaric 2023</p>
         </div>
     </footer>
-
+    <!-- Script connecting the Javascript to the page -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
