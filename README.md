@@ -1,13 +1,11 @@
-<!-- Code for readme adapted from author's own project (Portfolio 1),
-https://github.com/Boiann/boudoir-studio -->
-
 # BUDGET CALCULATOR
 
-Short description
+Budget Calculator is a Project 2 for Code Institute Full-stack development program: HTML/CSS Essentials.
+Made with passion for personal use of the author in the future, and for anyone interested in a clean and fast budgeting option.
 
-Responsive website image
+<!-- Responsive website image -->
 
-Visit the live site
+Visit the live site [Here.](https://boiann.github.io/budget-calculator "Link to Budget Calculator")
 
 ---
 
@@ -46,13 +44,19 @@ Visit the live site
 ---
 
 ## **Project Overview**
-
+Budget Calculator was created as a great idea to have the project for Project 2 submission and keep the option to use it on a regular basis in the future.
+The Author is calculating the budget at the beginning of every month, taking multiple income/expense values into consideration.
+Having developed this page, the author feels it will be much easier and nicer to use this webpage then paper.
 
 ### **Project Goals**
-  * 
+  * Present the Budget calculator in a clean and easy to understand manner
+  * Keep good UX principles regarding layout/colours/interaction
+  * Robust javascript code without issues/bugs
 
 ### **User Goals**
-  * 
+  * Use the site for intended purpose quickly and intuitively
+  * Accessible on multiple devices
+  * To be able to find additional info if needed
 
 [Back to top ⇧](#budget-calculator)
 
@@ -61,18 +65,28 @@ Visit the live site
 ## **User Experience**
 
 ### **User Expectations**
-   * 
+  * Able to quickly understand what the purpose of the site is
+  * Find additional info if needed
+  * Every interaction has feedback 
+  * Fast performance
+  * User-friendly
 
 ### **User Stories**
 
   #### **First Time Visitor**
-   * 
+   * I want to know what is this site for
+   * I want to find additional info/instructions
+   * I want to personalize this site for myself
 
   #### **Returning User**
-   * 
+   * I want to do some calculations quickly
+   * I want to see the author's other work
+   * I want to keep the results for later use 
 
   #### **Website Owner**
-   * 
+   * I want to give a smooth and fast experience
+   * I want to use the site regularly
+   * I want no bugs or issues
 
 [Back to top ⇧](#budget-calculator)
 
