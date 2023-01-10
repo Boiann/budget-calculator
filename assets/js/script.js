@@ -39,35 +39,36 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('#modal-message').textContent = `Please enter your name!`;
             document.querySelector('#modal-overlay').classList.remove('hidden');
         } else {
-        // Make the income input mandatory
-        const incomeInputs = document.querySelectorAll('.income-item input[type="number"]');
-        let totalIncomes = 0;
-        for (let i = 0; i < incomeInputs.length; i++) {
-            // Make the expense input mandatory
-            if (incomeInputs[i].value <= 0) {
-                document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all income using positive numbers';
-                document.querySelector('#modal-overlay').classList.remove('hidden');
-                return;
+            // Make the income input mandatory
+            const incomeInputs = document.querySelectorAll('.income-item input[type="number"]');
+            let totalIncomes = 0;
+            for (let i = 0; i < incomeInputs.length; i++) {
+                // Make the expense input mandatory
+                if (incomeInputs[i].value <= 0) {
+                    document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all income using positive numbers';
+                    document.querySelector('#modal-overlay').classList.remove('hidden');
+                    return;
+                }
+                totalIncomes += parseInt(incomeInputs[i].value);
             }
-            totalIncomes += parseInt(incomeInputs[i].value);
-        }
-        const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
-        let totalExpenses = 0;
-        for (let i = 0; i < expenseInputs.length; i++) {
-            // Make the expense input mandatory
-            if (expenseInputs[i].value <= 0) {
-                document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all expenses using positive numbers';
-                document.querySelector('#modal-overlay').classList.remove('hidden');
-                return;
+            const expenseInputs = document.querySelectorAll('.expense-item input[type="number"]');
+            let totalExpenses = 0;
+            for (let i = 0; i < expenseInputs.length; i++) {
+                // Make the expense input mandatory
+                if (expenseInputs[i].value <= 0) {
+                    document.querySelector('#modal-message').textContent = 'Please enter a valid amount for all expenses using positive numbers';
+                    document.querySelector('#modal-overlay').classList.remove('hidden');
+                    return;
+                }
+                totalExpenses += parseInt(expenseInputs[i].value);
             }
-            totalExpenses += parseInt(expenseInputs[i].value);
+            const currency = document.getElementById('currency').value;
+            const budget = totalIncomes - totalExpenses;
+            document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
+            document.getElementById('total-expenses').innerHTML = `Total expenses: ${totalExpenses} ${currency}s`;
+            document.getElementById('total-income').innerHTML = `Total income: ${totalIncomes} ${currency}s`;
         }
-        const currency = document.getElementById('currency').value;
-        const budget = totalIncomes - totalExpenses;
-        document.getElementById('budget').innerHTML = `Budget: ${budget} ${currency}s`;
-        document.getElementById('total-expenses').innerHTML = `Total expenses: ${totalExpenses} ${currency}s`;
-        document.getElementById('total-income').innerHTML = `Total income: ${totalIncomes} ${currency}s`;
-    }}
+    }
 
 
     // Get the add expense button and add a click event listener
@@ -219,11 +220,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Add a submit event listener to the about text
-document.querySelector('#about').addEventListener('click', function (event) {
-    event.preventDefault();
-    // Show the message in the opened modal
-    document.querySelector('#modal-message').innerHTML = 
-        `<h3>Welcome to your personal budget calculator!</h3>
+    document.querySelector('#about').addEventListener('click', function (event) {
+        event.preventDefault();
+        // Show the message in the opened modal
+        document.querySelector('#modal-message').innerHTML =
+            `<div id=modal-about-text><h3>Welcome to your personal budget calculator!</h3>
         <h4>Made with passion and out of necessity to clearly see how the income and expenses affect the final budget.</h4>
         <ul>
             <li>You can use it to add multiple incomes and expenses and get the final calculation on your leftover budget.</li>
@@ -233,9 +234,10 @@ document.querySelector('#about').addEventListener('click', function (event) {
             <li>When you enter your name the calculator becomes personalized and it is easy to make a reference to the person that used it, it is also required.</li>
             <li>When you are done, there is a handy print button with the current date and time so you can print the results for accounting/bookkeeping.</li>
         </ul>
-        <h4>Enjoy using the calculator, hope there is a lot left over in the budget when you're done!</h4>`;
-    document.querySelector('#modal-overlay').classList.remove('hidden');
-});
+        <h4>Enjoy using the calculator, hope there is a lot left over in the budget when you're done!</h4>
+        </div>`;
+        document.querySelector('#modal-overlay').classList.remove('hidden');
+    });
 
 
 

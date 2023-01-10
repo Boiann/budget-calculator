@@ -270,4 +270,8 @@ select {
     h1 {
         text-align: center;
     }
+
+    #modal-about-text {
+        font-size: 90%;
+    }
 }
