@@ -121,7 +121,8 @@ The font has a back-up font in case the selected doesn't load for the user, sans
 
 The image is used as the logo and favicon.
 It was also used as a source for the inspiration for the general colour use through the project.
-Source credited in the [Credits](#credits) cection of this README.
+Source credited in the [Credits](#credits) cection of this README and as a tooltip when the user hovers over the logo image.
+
 
 ### **Structure**
   * Budget Calculator website is structured in a user friendly and easy to navigate way.
@@ -199,6 +200,9 @@ This has been tested for display size of 320 px, but it does work below that lim
 
 * Hover effect on 'About' text in the header and modal opening, modal close button hover effect
 <!-- image -->
+
+* Tooltip showing for 'About' and the logo image
+<!-- image  -->
 
 * Hover effect on all the buttons present in the page
 <!-- image -->
