@@ -321,7 +321,18 @@ There were many sites visited during the duration of the project.
 
   
 ###  **Acknowledgments**
+Without support I got from other people, this project would never be realized. I'll try and remember to thank everyone and everything I can!
 
+* Mirjana, my wife, thank you for your support and cheering me on, lifting me 
+back up when it got hard. Thank you for taking care of all the housework and food, children and numerous other responsibilities while I was busy with full time job and doing this project on the side. Without you this journey into career change would never be possible.
+* A., G. and V., my three beautiful girls. Thank you for being so understanding during the project. Thank you from the bottom of my heart for being who you are, wonderful and delightful souls. You make me proud to be your dad.
+* Boris and Maja, my brother and sister, thank you for testing my project so thoroughly, and for your support.
+* Marija and Boris, my mother and father, thank you for making me feel like a superstar when I announced I'm starting this journey.
+* John, my friend, thank you for starting me on this path, and for your support, chats and sharing the things you learned.
+* Helen from Code Institute, thank you believing in me and making this change possible.
+* Slack community, thank you for being a constant source of good information.
+* Koko, my mentor, thank you for being an incredible source of solutions and good advice, your support meant a great deal during the project.
+* C8H10N4O2 in a cup. Thank you for existing.
 
 [Back to top ⇧](#budget-calculator)
 
